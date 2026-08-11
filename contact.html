@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Nick Toh, Communication Designer</title>
+  <meta name="description" content="Get in touch with Nick Toh — communication designer based in Melbourne. Available for branding, digital and UI/UX projects." />
+  <meta property="og:title" content="Contact Nick Toh — Communication Designer" />
+  <meta property="og:description" content="Available for branding, digital and UI/UX projects. Based in Melbourne, working with clients globally." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nicktoh.com/contact.html" />
+  <meta property="og:image" content="https://nicktoh.com/assets/images/og-contact.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+</head>
+<body class="page-top">
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Nick Toh home">
+        <div class="nav__monogram" aria-hidden="true">NT</div>
+        <span>Nick Toh</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta btn btn--primary">Get in touch</a>
+      <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-menu">
+    <a href="index.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav__mobile-cta">Get in touch</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+      <div class="container">
+        <p class="label" style="margin-bottom: 1rem;">Get in touch</p>
+        <h1 class="display contact-hero__headline">
+          Let's make something good.
+        </h1>
+        <p class="contact-hero__sub">
+          I'm currently available for new projects. Tell me what you're working on and let's see if we're a good fit.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT BODY -->
+    <section class="contact-body">
+      <div class="container">
+        <div class="contact-body__inner">
+
+          <!-- Details -->
+          <aside class="contact-details">
+            <div>
+              <p class="contact-detail__label">Email</p>
+              <p class="contact-detail__value">
+                <a href="mailto:nictzh@gmail.com">nictzh@gmail.com</a>
+              </p>
+            </div>
+            <div>
+              <p class="contact-detail__label">Phone</p>
+              <p class="contact-detail__value">
+                <a href="tel:+61466975858">+61 466 975 858</a>
+              </p>
+            </div>
+            <div>
+              <p class="contact-detail__label">Location</p>
+              <p class="contact-detail__value">Melbourne, Australia</p>
+            </div>
+            <div>
+              <p class="contact-detail__label">LinkedIn</p>
+              <p class="contact-detail__value">
+                <a href="https://www.linkedin.com/in/nick-toh-4a0911a/" target="_blank" rel="noopener">nick-toh-4a0911a</a>
+              </p>
+            </div>
+          </aside>
+
+          <!-- Form (Formspree) -->
+          <div>
+            <form
+              class="form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              novalidate
+            >
+              <!-- Replace YOUR_FORM_ID at formspree.io after signing up -->
+
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Jane Smith"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane@company.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="project-type">Project type</label>
+                <select id="project-type" name="project_type">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="brand-identity">Brand identity</option>
+                  <option value="digital-design">Digital design</option>
+                  <option value="ui-ux">UI / UX design</option>
+                  <option value="print-packaging">Print & packaging</option>
+                  <option value="other">Other / not sure yet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell me about your project</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="What are you working on? What's the timeline? Anything else I should know?"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary form__submit">
+                Send message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="nav__logo" style="margin-bottom: 0.75rem;">
+            <div class="nav__monogram" aria-hidden="true">NT</div>
+            <span>Nick Toh</span>
+          </div>
+          <p class="footer__tagline">Communication design for brands that mean business — Melbourne, Australia.</p>
+        </div>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.linkedin.com/in/nick-toh-4a0911a/" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="year"></span> Nick Toh. All rights reserved.</p>
+        <div class="footer__accent" aria-hidden="true"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
