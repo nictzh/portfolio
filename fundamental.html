@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Fundamental — Nick Toh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700;125,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="nav"><div class="inner">
+<a href="index.html" class="brand"><span class="monogram">NT</span><span class="name">Nick Toh</span></a>
+<nav class="navlinks">
+<a href="index.html" class="navlink active">Work</a>
+<a href="about.html" class="navlink">About</a>
+<a href="#" class="navlink">Contact</a>
+</nav>
+<button class="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+<div class="navDrawer">
+<a href="index.html" class="navlink active">Work</a>
+<a href="about.html" class="navlink">About</a>
+<a href="#" class="navlink">Contact</a>
+</div>
+</header>
+<script>(function(){var toggle=document.querySelector('.navToggle');var drawer=document.querySelector('.navDrawer');if(toggle&&drawer)toggle.addEventListener('click',function(){drawer.classList.toggle('open')})})();</script>
+<script>(function(){var nav=document.querySelector('.nav');function onScroll(){var t=window.scrollY>window.innerHeight*0.8;nav.classList.toggle('scrolled',t)}window.addEventListener('scroll',onScroll,{passive:true});onScroll()})();</script>
+
+<main class="main">
+<section class="caseHero">
+<span class="caseKicker">Brand Identity</span>
+<h1 class="caseTitle">Fundamental: Creating Believable Identity</h1>
+</section>
+<section class="caseSection" style="grid-template-columns:1fr">
+<div class="caseBody" style="max-width:100%">
+<p>Fundamental is an advertising agency based in Malaysia which came out from the transformation of its previous incarnation which was Lucideas. With the result of the logo resulting from an internal competition, my design was ultimately picked to spearhead the agency's personality and intentions.</p>
+<p>The literal logotype of a horse with a deliberate ice cream on top was intended to be a cheeky play of the idea of make belief, that anything can be an unicorn, as long as you are convinced to believe it to be. As the core of its brand value is about 'Believe in Advertising', we had also decided to utilise by having everyone's business cards personally tailored to reflect each of our individual beliefs.</p>
+<div class="caseBento6"><div><img src="https://static.wixstatic.com/media/53b24d_2c8fe725dba448258b6e9c52487deeca~mv2.jpg" alt="Fundamental" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_3135cc841ab2454eb9b72b17831b6cc3~mv2.jpg" alt="Fundamental" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_8256efcd7fd74cd99337c2412b7f3916~mv2.jpg" alt="Fundamental" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_2625bec2d1c64ec0b250c5c5dcad458d~mv2.jpg" alt="Fundamental" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_6249605861004b5fbf33892872af5638~mv2.jpg" alt="Fundamental" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_5d0a69b4c21b408cb16b72c117c8ccd1~mv2.jpg" alt="Fundamental" loading="lazy"></div></div>
+</div>
+</section>
+<nav class="caseNav">
+<a href="3ciety.html" class="caseNavLink">← 3ciety</a>
+<a href="ideas.html" class="caseNavLink">IDEAS →</a>
+</nav>
+<div class="lightbox" id="lightbox"><span class="lightboxClose">&times;</span><img src="" alt=""></div>
+</main>
+<script>(function(){var lb=document.getElementById('lightbox');if(!lb)return;var lbImg=lb.querySelector('img');function open(src,alt){lbImg.src=src;lbImg.alt=alt||'';lb.classList.add('open')}function close(){lb.classList.remove('open');lbImg.src=''}document.querySelectorAll('.caseImg img,.caseHeroImage img,.caseBento6 img').forEach(function(img){img.addEventListener('click',function(){open(img.currentSrc||img.src,img.alt)})});lb.addEventListener('click',close);document.addEventListener('keydown',function(e){if(e.key==='Escape')close()})})();</script>
+</body></html>

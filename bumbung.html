@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Bumbung — Nick Toh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700;125,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="nav"><div class="inner">
+<a href="index.html" class="brand"><span class="monogram">NT</span><span class="name">Nick Toh</span></a>
+<nav class="navlinks">
+<a href="index.html" class="navlink active">Work</a>
+<a href="about.html" class="navlink">About</a>
+<a href="#" class="navlink">Contact</a>
+</nav>
+<button class="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+<div class="navDrawer">
+<a href="index.html" class="navlink active">Work</a>
+<a href="about.html" class="navlink">About</a>
+<a href="#" class="navlink">Contact</a>
+</div>
+</header>
+<script>(function(){var toggle=document.querySelector('.navToggle');var drawer=document.querySelector('.navDrawer');if(toggle&&drawer)toggle.addEventListener('click',function(){drawer.classList.toggle('open')})})();</script>
+<script>(function(){var nav=document.querySelector('.nav');function onScroll(){var t=window.scrollY>window.innerHeight*0.8;nav.classList.toggle('scrolled',t)}window.addEventListener('scroll',onScroll,{passive:true});onScroll()})();</script>
+
+<main class="main">
+<section class="caseHero">
+<span class="caseKicker">Brand Identity & UI/UX</span>
+<h1 class="caseTitle">Bumbung Brand Identity</h1>
+</section>
+<section class="caseSection" style="grid-template-columns:1fr">
+<div class="caseBody" style="max-width:100%">
+<p>Bumbung was a aspiring Malaysian startup, aiming to connect home-seekers and real estate agents and pair them up together.</p>
+<p>I worked closely with the founders to create a refreshing brand and identity that helps to stand out from its competitors, as well as to make it appealing to young working professionals who are their target audiences.</p>
+<p>As bumbung basically means 'roof' in Malay, I intended to tie its literal meaning to bumbung's goal of connecting home-seekers and agents. Therefore, the logomark is built of a simple idea of connectivity through their services, forming the shape of a roof.</p>
+<p>As well as coming up with its brand identity, I also worked closely with the developer team to facelift UI/UX interface for bumbung's initial website as well their customer/agents backend portal.</p>
+<div class="caseBento">
+<div class="bTall"><img src="https://static.wixstatic.com/media/53b24d_e5f5028f8e05415296735916cf199681~mv2.jpg" alt="Bumbung" loading="lazy"></div>
+<div class="bWide"><img src="https://static.wixstatic.com/media/53b24d_7a44c2e3cb484af499f6ff43f8afaf17~mv2.png" alt="Bumbung" loading="lazy"></div>
+<div><img src="https://static.wixstatic.com/media/53b24d_abd6b65868624db188426af68de68ef1~mv2.png" alt="Bumbung" loading="lazy"></div>
+<div><img src="https://static.wixstatic.com/media/53b24d_3f4bcc392ec640c9ab21dd1cb830ef75~mv2.jpg" alt="Bumbung" loading="lazy"></div>
+</div>
+</div>
+</section>
+<nav class="caseNav">
+<a href="eastern-warehouse.html" class="caseNavLink">← Eastern Warehouse</a>
+<a href="3ciety.html" class="caseNavLink">3ciety →</a>
+</nav>
+<div class="lightbox" id="lightbox"><span class="lightboxClose">&times;</span><img src="" alt=""></div>
+</main>
+<script>(function(){var lb=document.getElementById('lightbox');if(!lb)return;var lbImg=lb.querySelector('img');function open(src,alt){lbImg.src=src;lbImg.alt=alt||'';lb.classList.add('open')}function close(){lb.classList.remove('open');lbImg.src=''}document.querySelectorAll('.caseImg img,.caseHeroImage img,.caseImgFull img,.caseBento img').forEach(function(img){img.addEventListener('click',function(){open(img.currentSrc||img.src,img.alt)})});lb.addEventListener('click',close);document.addEventListener('keydown',function(e){if(e.key==='Escape')close()})})();</script>
+</body></html>

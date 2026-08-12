@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Eastern Warehouse — Nick Toh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700;125,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="nav"><div class="inner">
+<a href="index.html" class="brand"><span class="monogram">NT</span><span class="name">Nick Toh</span></a>
+<nav class="navlinks">
+<a href="index.html" class="navlink active">Work</a>
+<a href="about.html" class="navlink">About</a>
+<a href="#" class="navlink">Contact</a>
+</nav>
+<button class="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+<div class="navDrawer">
+<a href="index.html" class="navlink active">Work</a>
+<a href="about.html" class="navlink">About</a>
+<a href="#" class="navlink">Contact</a>
+</div>
+</header>
+<script>(function(){var toggle=document.querySelector('.navToggle');var drawer=document.querySelector('.navDrawer');if(toggle&&drawer)toggle.addEventListener('click',function(){drawer.classList.toggle('open')})})();</script>
+<script>(function(){var nav=document.querySelector('.nav');function onScroll(){var t=window.scrollY>window.innerHeight*0.8;nav.classList.toggle('scrolled',t)}window.addEventListener('scroll',onScroll,{passive:true});onScroll()})();</script>
+
+<main class="main">
+<section class="caseHero">
+<span class="caseKicker">Branding & Operations</span>
+<h1 class="caseTitle">Eastern Warehouse</h1>
+</section>
+<section class="caseSection" style="grid-template-columns:1fr">
+<div class="caseBody" style="max-width:100%">
+<p>Eastern Warehouse started as a Furniture Wholesale family business 30 years ago, carrying a strong passion for design and a distinctive selection of furniture intended for Australian living.</p>
+<p>As the core of the business itself has shifted to more e-commerce oriented clients, one of my first tasks was to bring the brand back up to the current times, as well as translating its product offerings to its potential value. This would help transition to the philosophy and beliefs in forming its sister brand — L3 Home.</p>
+<p>Asides from managing the branding and marketing side of things, I am also in charge of the Operations and Customer Service (partially) side of things. Along the way, these roles has helped me gained experience in the fundamentals of managing warehouses for online fulfillment and dropshipping as well as how the supply chain works in the e-commerce industry.</p>
+<div class="caseBento6"><div><img src="https://static.wixstatic.com/media/53b24d_404675a68b1f4d1fb2d378efac9caf24~mv2.jpg" alt="Eastern Warehouse" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_ea39c9dd06d94ab9b684c7b2a0c0a401~mv2.jpg" alt="Eastern Warehouse" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_82be53550c604a69a38dee82ae74a106~mv2.jpg" alt="Eastern Warehouse" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_58e6c0c451ef48c783557e28731c6d00~mv2.jpg" alt="Eastern Warehouse" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_f5b5d19a82c947de9aeb69b0009fff1b~mv2.jpg" alt="Eastern Warehouse" loading="lazy"></div><div><img src="https://static.wixstatic.com/media/53b24d_c52aa737f0564faa837abe352d7391df~mv2.jpg" alt="Eastern Warehouse" loading="lazy"></div></div>
+</div>
+</section>
+<nav class="caseNav">
+<a href="l3home-branding.html" class="caseNavLink">← L3 Home — Branding</a>
+<a href="bumbung.html" class="caseNavLink">Bumbung →</a>
+</nav>
+<div class="lightbox" id="lightbox"><span class="lightboxClose">&times;</span><img src="" alt=""></div>
+</main>
+<script>(function(){var lb=document.getElementById('lightbox');if(!lb)return;var lbImg=lb.querySelector('img');function open(src,alt){lbImg.src=src;lbImg.alt=alt||'';lb.classList.add('open')}function close(){lb.classList.remove('open');lbImg.src=''}document.querySelectorAll('.caseImg img,.caseHeroImage img,.caseBento6 img').forEach(function(img){img.addEventListener('click',function(){open(img.currentSrc||img.src,img.alt)})});lb.addEventListener('click',close);document.addEventListener('keydown',function(e){if(e.key==='Escape')close()})})();</script>
+</body></html>
