@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import styles from "./Nav.module.css";
+import { useEffect, useState } from "react";
 
 const links = [
   { label: "Work", href: "/" },
@@ -14,23 +13,31 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > window.innerHeight * 0.8);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className={styles.nav}>
-      <div className={styles.inner}>
-        <Link href="/" className={styles.brand} onClick={() => setOpen(false)}>
-          <span className={styles.monogram}>NT</span>
-          <span className={styles.name}>Nick Toh</span>
+    <header className={`nav${scrolled ? " scrolled" : ""}`}>
+      <div className="inner">
+        <Link href="/" className="brand" onClick={() => setOpen(false)}>
+          <span className="monogram">NT</span>
+          <span className="name">Nick Toh</span>
         </Link>
 
-        <nav className={styles.links}>
+        <nav className="navlinks">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`${styles.link} ${
-                pathname === link.href ? styles.linkActive : ""
-              }`}
+              className={`navlink${pathname === link.href ? " active" : ""}`}
             >
               {link.label}
             </Link>
@@ -39,33 +46,29 @@ export default function Nav() {
 
         <button
           type="button"
-          className={styles.toggle}
-          aria-label="Toggle menu"
+          className="navToggle"
+          aria-label="Menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
-          <span className={styles.toggleBar} />
-          <span className={styles.toggleBar} />
-          <span className={styles.toggleBar} />
+          <span />
+          <span />
+          <span />
         </button>
       </div>
 
-      {open && (
-        <nav className={styles.mobileLinks}>
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`${styles.link} ${
-                pathname === link.href ? styles.linkActive : ""
-              }`}
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-      )}
+      <div className={`navDrawer${open ? " open" : ""}`}>
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`navlink${pathname === link.href ? " active" : ""}`}
+            onClick={() => setOpen(false)}
+          >
+            {link.label}
+          </Link>
+        ))}
+      </div>
     </header>
   );
 }

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "About — Nick Toh",
@@ -73,12 +72,10 @@ const brandSkills = [
 
 export default function About() {
   return (
-    <main className={styles.main}>
-      <section className={styles.intro}>
-        <h1 className={styles.opener}>
-          I blur the line between brand and product design.
-        </h1>
-        <p className={styles.bio}>
+    <main className="main">
+      <section className="intro">
+        <h1 className="opener">I blur the line between brand and product design.</h1>
+        <p className="bio">
           Melbourne-based designer with 10+ years across branding, digital,
           and UX/UI. Started in Malaysia, moved to Australia, built for
           startups and SMBs ever since.
@@ -87,42 +84,42 @@ export default function About() {
           href="/pdfs/nick-toh-cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.cvButton}
+          className="cvButton"
         >
           Download CV
         </a>
       </section>
 
-      <section className={styles.section}>
-        <span className={styles.sectionLabel}>Work History</span>
+      <section className="section">
+        <span className="sectionLabel">Work History</span>
         {workHistory.map((entry) => (
-          <div className={styles.entry} key={entry.role}>
-            <span className={styles.entryDate}>{entry.date}</span>
-            <div className={styles.entryBody}>
-              <span className={styles.entryRole}>{entry.role}</span>
-              <span className={styles.entryOrg}>{entry.org}</span>
+          <div className="entry" key={entry.role}>
+            <span className="entryDate">{entry.date}</span>
+            <div className="entryBody">
+              <span className="entryRole">{entry.role}</span>
+              <span className="entryOrg">{entry.org}</span>
             </div>
           </div>
         ))}
       </section>
 
-      <section className={styles.section}>
-        <span className={styles.sectionLabel}>Education</span>
+      <section className="section">
+        <span className="sectionLabel">Education</span>
         {education.map((entry) => (
-          <div className={styles.entry} key={entry.role}>
-            <span className={styles.entryDate}>{entry.date}</span>
-            <div className={styles.entryBody}>
-              <span className={styles.entryRole}>{entry.role}</span>
-              <span className={styles.entryOrg}>{entry.org}</span>
+          <div className="entry" key={entry.role}>
+            <span className="entryDate">{entry.date}</span>
+            <div className="entryBody">
+              <span className="entryRole">{entry.role}</span>
+              <span className="entryOrg">{entry.org}</span>
             </div>
           </div>
         ))}
       </section>
 
-      <section className={styles.section}>
-        <span className={styles.sectionLabel}>Skills</span>
-        <div className={styles.skillsGrid}>
-          <div className={styles.skillsColumn}>
+      <section className="section">
+        <span className="sectionLabel">Skills</span>
+        <div className="skillsGrid">
+          <div className="skillsColumn">
             <h3>Product Design</h3>
             <ul>
               {productSkills.map((skill) => (
@@ -130,7 +127,7 @@ export default function About() {
               ))}
             </ul>
           </div>
-          <div className={styles.skillsColumn}>
+          <div className="skillsColumn">
             <h3>Brand & Creative</h3>
             <ul>
               {brandSkills.map((skill) => (

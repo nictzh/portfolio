@@ -1,72 +1,101 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import TagPill from "@/components/TagPill/TagPill";
-import styles from "./CaseStudyLayout.module.css";
+import { useEffect, useState } from "react";
+
+type MetaItem = { label: string; value: string };
+type NavLink = { href: string; label: string };
 
 type CaseStudyLayoutProps = {
+  kicker: string;
   title: string;
-  tag: string;
-  client: string;
-  role: string;
-  year: string;
-  tools: string;
-  heroImage: {
-    src: string;
-    alt: string;
-  };
+  meta?: MetaItem[];
+  heroImage?: { src: string; alt: string };
+  prevLink: NavLink;
+  nextLink: NavLink;
   children: React.ReactNode;
 };
 
 export default function CaseStudyLayout({
+  kicker,
   title,
-  tag,
-  client,
-  role,
-  year,
-  tools,
+  meta,
   heroImage,
+  prevLink,
+  nextLink,
   children,
 }: CaseStudyLayoutProps) {
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [lightbox]);
+
+  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
+    const img = (e.target as HTMLElement).closest("img");
+    if (img instanceof HTMLImageElement) {
+      setLightbox({ src: img.currentSrc || img.src, alt: img.alt });
+    }
+  };
+
   return (
-    <main className={styles.main}>
-      <Link href="/" className={styles.back}>
-        ← Back to work
-      </Link>
+    <main className="main" onClick={handleClick}>
+      <section className="caseHero">
+        <span className="caseKicker">{kicker}</span>
+        <h1 className="caseTitle">{title}</h1>
 
-      <h1 className={styles.title}>{title}</h1>
-      <TagPill label={tag} />
+        {meta && (
+          <div className="caseMetaGrid">
+            {meta.map((item) => (
+              <div className="caseMetaItem" key={item.label}>
+                <span className="caseMetaLabel">{item.label}</span>
+                <span className="caseMetaValue">{item.value}</span>
+              </div>
+            ))}
+          </div>
+        )}
 
-      <div className={styles.overview}>
-        <div className={styles.overviewItem}>
-          <span className={styles.overviewLabel}>Client</span>
-          <span className={styles.overviewValue}>{client}</span>
-        </div>
-        <div className={styles.overviewItem}>
-          <span className={styles.overviewLabel}>Role</span>
-          <span className={styles.overviewValue}>{role}</span>
-        </div>
-        <div className={styles.overviewItem}>
-          <span className={styles.overviewLabel}>Year</span>
-          <span className={styles.overviewValue}>{year}</span>
-        </div>
-        <div className={styles.overviewItem}>
-          <span className={styles.overviewLabel}>Tools</span>
-          <span className={styles.overviewValue}>{tools}</span>
-        </div>
+        {heroImage && (
+          <div className="caseHeroImage">
+            <Image
+              src={heroImage.src}
+              alt={heroImage.alt}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 1312px"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        )}
+      </section>
+
+      {children}
+
+      <nav className="caseNav">
+        <Link href={prevLink.href} className="caseNavLink">
+          {prevLink.label}
+        </Link>
+        <Link href={nextLink.href} className="caseNavLink">
+          {nextLink.label}
+        </Link>
+      </nav>
+
+      <div
+        className={`lightbox${lightbox ? " open" : ""}`}
+        onClick={() => setLightbox(null)}
+      >
+        <span className="lightboxClose">&times;</span>
+        {lightbox && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={lightbox.src} alt={lightbox.alt} />
+        )}
       </div>
-
-      <div className={styles.heroImage}>
-        <Image
-          src={heroImage.src}
-          alt={heroImage.alt}
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, 1312px"
-          style={{ objectFit: "cover" }}
-        />
-      </div>
-
-      <div className={styles.body}>{children}</div>
     </main>
   );
 }
