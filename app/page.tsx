@@ -45,17 +45,32 @@ const projects = [
   {
     title: "Mitre 10",
     description: "Retail and campaign design for a national hardware chain",
-    comingSoon: true,
+    href: "/work/mitre10",
+    image: { src: "/images/mitre10/hero.jpg", alt: "Mitre 10" },
+  },
+  {
+    title: "Taubmans",
+    description: "UX case study",
+    href: "/work/taubmans",
+    image: { src: "/images/taubmans/hero.jpg", alt: "Taubmans" },
   },
   {
     title: "MMEM",
     description: "Brand identity and collateral",
-    comingSoon: true,
+    href: "/work/mmem",
+    image: { src: "/images/mmem/hero.jpg", alt: "MMEM" },
   },
   {
     title: "Aspect Skincare",
     description: "Brand identity and packaging for a skincare label",
-    comingSoon: true,
+    href: "/work/aspect-skincare",
+    image: { src: "/images/aspect-skincare/hero.jpg", alt: "Aspect Skincare" },
+  },
+  {
+    title: "Mirvac",
+    description: "Redesigning for Build-to-Rent",
+    href: "/work/mirvac",
+    image: { src: "/images/mirvac/1.jpg", alt: "Mirvac" },
   },
   {
     title: "L3 Home — UX/UI",
@@ -88,22 +103,10 @@ const projects = [
     image: { src: "/images/3ciety/hero.png", alt: "3ciety.com" },
   },
   {
-    title: "Fundamental",
-    description: "Identity and print collateral for a KL creative agency",
-    href: "/work/fundamental",
-    image: { src: "/images/fundamental/hero.jpg", alt: "Fundamental" },
-  },
-  {
-    title: "IDEAS",
-    description: "Publication design for a Malaysian policy think tank",
-    href: "/work/ideas",
-    image: { src: "/images/ideas/hero.jpg", alt: "IDEAS" },
-  },
-  {
-    title: "F&N Ang Pau",
-    description: "Festive packaging for a national F&B brand",
-    comingSoon: true,
-    image: { src: "/images/fn-angpau/hero.jpg", alt: "F&N Ang Pau" },
+    title: "Archives",
+    description: "Fundamental, IDEAS, and F&N Ang Pau — selected older work",
+    href: "/work/archives",
+    image: { src: "/images/archives/hero.jpg", alt: "Archives" },
   },
 ];
 
