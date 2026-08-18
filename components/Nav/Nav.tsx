@@ -32,7 +32,7 @@ export default function Nav() {
     <header className={`nav${scrolled ? " scrolled" : ""}`}>
       <div className="inner">
         <Link href="/" className="brand" onClick={() => setOpen(false)}>
-          <img className="monogram" src="/images/nt-logo.svg" alt="NT" style={{ width: 89, height: 54 }} />
+          <img className="monogram" src="/images/nt-logo.svg" alt="NT" />
           <span className="name">Nick Toh</span>
         </Link>
 

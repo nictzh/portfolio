@@ -115,7 +115,7 @@ export default function Footer() {
       <div className="heroGrid contactGrid" />
       <canvas className="contactPen" ref={canvasRef} />
       <span className="sectionLabel">Say Hello!</span>
-      <h2 ref={headlineRef} className={`contactHeadline${visible ? " visible" : ""}`} style={{ fontSize: 72 }}>
+      <h2 ref={headlineRef} className={`contactHeadline${visible ? " visible" : ""}`}>
         Want to reach out?
         <br />
         Let&apos;s talk
