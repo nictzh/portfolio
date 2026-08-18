@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const links = [
   { label: "Work", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Nav() {
@@ -24,6 +24,11 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const linkHref = (href: string) => {
+    if (href === "/#contact") return pathname === "/" ? "#contact" : "/#contact";
+    return href;
+  };
+
   return (
     <header className={`nav${scrolled ? " scrolled" : ""}`}>
       <div className="inner">
@@ -36,7 +41,7 @@ export default function Nav() {
           {links.map((link) => (
             <Link
               key={link.href}
-              href={link.href}
+              href={linkHref(link.href)}
               className={`navlink${pathname === link.href ? " active" : ""}`}
             >
               {link.label}
@@ -61,7 +66,7 @@ export default function Nav() {
         {links.map((link) => (
           <Link
             key={link.href}
-            href={link.href}
+            href={linkHref(link.href)}
             className={`navlink${pathname === link.href ? " active" : ""}`}
             onClick={() => setOpen(false)}
           >

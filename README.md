@@ -11,6 +11,10 @@ Drop these files into your `nictzh/portfolio` repo at the matching paths, then c
 1. **Images**: every `<CaseImage>` below points at `/images/<project>/n.jpg`. Add the real files to `public/images/<project>/` (create the folders) — same pattern as `bumbung`. Nothing will 404 the build, but slots render broken until the files exist.
 2. **Nav order**: I linked the case-study prev/next chain as Mitre 10 → Taubmans → MMEM → Aspect Skincare → Mirvac → L3 Home UX/UI, matching the homepage list order. Adjust `prevLink`/`nextLink` in each file if you want a different sequence.
 3. **Archives**: `app/work/archives/page.tsx` merges the IDEAS + Fundamental case studies plus a new "Other works" gallery into one page, matching the live HTML site. It replaces your repo's separate `app/work/fundamental` and `app/work/ideas` routes — delete those two folders, and update `app/work/3ciety/page.tsx`'s `nextLink` to point at `/work/archives` (it currently points at `/work/fundamental`). The homepage project list here already swaps the old Fundamental/IDEAS cards for one "Archives" card.
-4. Run `npm run build` locally once to confirm no type errors before pushing.
+4. **Footer + Contact**: added `components/Footer/Footer.tsx` (the "Say Hello!" section with the pen-drawing canvas effect) and wired it into `app/layout.tsx` so it renders on every page. The Nav's "Contact" link now scrolls to `#contact` instead of routing to `/contact` — delete `app/contact/page.tsx` if it exists in your repo, it's no longer used.
+5. **Hero pen effect**: `components/Hero/Hero.tsx` replaced the static mouse-follow dot grid with a full-window pen-drawing canvas (same technique as the footer), matching the current HTML homepage.
+6. **Client logos moved off the homepage**: the client ticker under the hero is gone — those brand names now live in the About page's new "Brands I have worked with" grid instead.
+7. **About page rebuilt**: `app/about/page.tsx` now matches the current HTML — Work History timeline, a new "Platforms I work with" tile grid, "Brands I have worked with" grid, and Education. The old two-column Skills section is dropped (hidden in the live design).
+8. Run `npm run build` locally once to confirm no type errors before pushing.
 
 No code push happened automatically — I don't have write access to your GitHub repo, only read access.

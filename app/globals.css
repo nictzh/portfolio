@@ -347,6 +347,194 @@ button {
   opacity: 1;
 }
 
+.heroPen {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  pointer-events: none;
+}
+
+.brandGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.brandTile {
+  aspect-ratio: 2 / 1;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-hover);
+  border-radius: 12px;
+}
+
+.brandTile .logoPlaceholder {
+  font-family: var(--font-archivo), sans-serif;
+  font-weight: 700;
+  font-stretch: 125%;
+  font-size: var(--fs-0);
+  color: var(--color-muted);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .brandGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.softwareGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.softwareTile {
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--color-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.softwareTile .logoPlaceholder {
+  font-size: var(--fs-00);
+  color: var(--color-muted);
+}
+
+.historyGrid {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 48px;
+}
+
+@media (max-width: 768px) {
+  .historyGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.expList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.expList .expItem,
+.expList .entry {
+  opacity: 1;
+  transform: none;
+}
+
+.contact {
+  position: relative;
+  padding: 96px 0 80px;
+  text-align: center;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.contact .contactPen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.contact .sectionLabel {
+  position: relative;
+  text-align: center;
+}
+
+.contactHeadline {
+  position: relative;
+  font-family: var(--font-archivo), sans-serif;
+  font-weight: 800;
+  font-stretch: 125%;
+  font-size: clamp(var(--fs-5), 6vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -2px;
+  color: var(--color-text);
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 0.9, 0.32, 1), transform 0.7s cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+.contactHeadline.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contactLinks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 56px;
+  flex-wrap: wrap;
+}
+
+.contactLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.contactLink .contactLinkText {
+  font-family: var(--font-archivo), sans-serif;
+  font-weight: 800;
+  font-stretch: 125%;
+  font-size: clamp(var(--fs-2), 2.2vw, 2.1rem);
+  color: var(--color-text);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.contactLink .contactLinkText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.contactLink:hover .contactLinkText {
+  color: var(--color-accent);
+}
+
+.contactLink:hover .contactLinkText::after {
+  transform: scaleX(1);
+}
+
+.contactLink .contactLinkSub {
+  font-size: var(--fs-0);
+  color: var(--color-muted);
+}
+
+.contactGrid {
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 20%, #000 80%, transparent);
+  mask-image: linear-gradient(180deg, transparent, #000 20%, #000 80%, transparent);
+}
+
 /* ============================================
    SKILLS / EXPERIENCE
    ============================================ */

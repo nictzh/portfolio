@@ -5,16 +5,6 @@ import ExperienceScroll, {
 } from "@/components/ExperienceScroll/ExperienceScroll";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
-const clients = [
-  "L3 Home",
-  "Eastern Warehouse",
-  "Bumbung",
-  "Temple & Webster",
-  "OgilvyAction",
-  "Petronas",
-  "F&N",
-];
-
 const skills = [
   "UX/UI Design",
   "Design Systems",
@@ -116,7 +106,6 @@ export default function Home() {
       <Hero
         headline="UX + UI + Product Designer"
         sub="Hello, this is Nick Toh's portfolio, an UX designer for brands that want to mean something. 10+ years across branding, digital, and UX/UI. Melbourne-based, helping startups and growing businesses build brands and products with clarity and character."
-        clients={clients}
       />
 
       <Reveal className="expSection">
