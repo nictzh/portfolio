@@ -12,19 +12,18 @@ export default function Hero({ headline, sub }: HeroProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    const hero = heroRef.current;
     const canvas = canvasRef.current;
-    if (!hero || !canvas) return;
+    const hero = heroRef.current;
+    if (!canvas || !hero) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-
     const accent =
       getComputedStyle(document.documentElement).getPropertyValue("--color-accent").trim() ||
       "#E85A42";
 
-    const ptsRef: { x: number; y: number; t: number }[] = [];
-    let lastPoint: { x: number; y: number } | null = null;
-    let rafId: number | null = null;
+    let pts: { x: number; y: number; t: number }[] = [];
+    let last: { x: number; y: number } | null = null;
+    let raf = 0;
 
     function resize() {
       const w = window.innerWidth;
@@ -33,7 +32,6 @@ export default function Hero({ headline, sub }: HeroProps) {
       canvas!.height = r.height * devicePixelRatio;
       canvas!.style.width = w + "px";
       canvas!.style.height = r.height + "px";
-      ctx!.setTransform(1, 0, 0, 1, 0, 0);
       ctx!.scale(devicePixelRatio, devicePixelRatio);
     }
     resize();
@@ -42,17 +40,16 @@ export default function Hero({ headline, sub }: HeroProps) {
     const onMove = (e: MouseEvent) => {
       const r = hero!.getBoundingClientRect();
       if (r.bottom < 0 || r.top > window.innerHeight) {
-        lastPoint = null;
+        last = null;
         return;
       }
       const x = e.clientX;
       const y = e.clientY - r.top;
       if (y < 0 || y > r.height) {
-        lastPoint = null;
+        last = null;
         return;
       }
       const now = performance.now();
-      const last = lastPoint;
       if (last) {
         const dx = x - last.x;
         const dy = y - last.y;
@@ -62,28 +59,26 @@ export default function Hero({ headline, sub }: HeroProps) {
           const t = i / steps;
           const jx = x - dx + dx * t + (Math.random() - 0.5) * 3;
           const jy = y - dy + dy * t + (Math.random() - 0.5) * 3;
-          ptsRef.push({ x: jx, y: jy, t: now });
+          pts.push({ x: jx, y: jy, t: now });
         }
       } else {
-        ptsRef.push({ x, y, t: now });
+        pts.push({ x, y, t: now });
       }
-      lastPoint = { x, y };
+      last = { x, y };
     };
     window.addEventListener("mousemove", onMove);
 
     function frame() {
       const now = performance.now();
       const maxAge = 2200;
-      while (ptsRef.length && now - ptsRef[0].t >= maxAge) {
-        ptsRef.shift();
-      }
+      pts = pts.filter((p) => now - p.t < maxAge);
       ctx!.clearRect(0, 0, canvas!.width, canvas!.height);
       ctx!.lineCap = "round";
       ctx!.lineJoin = "round";
       ctx!.lineWidth = 1.6;
-      for (let i = 1; i < ptsRef.length; i++) {
-        const a = ptsRef[i - 1];
-        const b = ptsRef[i];
+      for (let i = 1; i < pts.length; i++) {
+        const a = pts[i - 1];
+        const b = pts[i];
         if (b.t - a.t > 200) continue;
         const age = now - b.t;
         const alpha = Math.max(0, 1 - age / maxAge);
@@ -95,14 +90,14 @@ export default function Hero({ headline, sub }: HeroProps) {
         ctx!.stroke();
       }
       ctx!.globalAlpha = 1;
-      rafId = requestAnimationFrame(frame);
+      raf = requestAnimationFrame(frame);
     }
-    rafId = requestAnimationFrame(frame);
+    raf = requestAnimationFrame(frame);
 
     return () => {
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", onMove);
-      if (rafId !== null) cancelAnimationFrame(rafId);
+      cancelAnimationFrame(raf);
     };
   }, []);
 

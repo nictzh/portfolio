@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
+import Reveal from "@/components/Reveal/Reveal";
 
 export const metadata: Metadata = {
   title: "About — Nick Toh",
   description:
     "Melbourne-based designer with 10+ years across branding, digital, and UX/UI.",
 };
-
-const workHistory = [
-  { date: "2017–Present", role: "Digitas", org: "UX UI Designer", year: "2025" },
-];
 
 const experience = [
   { year: "2025", role: "Digitas", org: "UX UI Designer" },
@@ -58,7 +55,7 @@ export default function About() {
         </a>
       </section>
 
-      <section className="section historyGrid">
+      <Reveal className="section historyGrid">
         <div>
           <span className="sectionLabel">Work History</span>
           <div className="expList">
@@ -88,9 +85,9 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section">
+      <Reveal className="section">
         <span className="sectionLabel">Brands I have worked with</span>
         <div className="brandGrid">
           {brands.map((brand, i) => (
@@ -99,9 +96,9 @@ export default function About() {
             </div>
           ))}
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section">
+      <Reveal className="section">
         <span className="sectionLabel">Education</span>
         {education.map((entry) => (
           <div className="entry" key={entry.role}>
@@ -112,7 +109,7 @@ export default function About() {
             </div>
           </div>
         ))}
-      </section>
+      </Reveal>
     </main>
   );
 }
