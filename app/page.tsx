@@ -22,13 +22,13 @@ const skills = [
 ];
 
 const experience: ExperienceEntry[] = [
-  { year: "2025", company: "Digitas", title: "UX UI Designer" },
-  { year: "2021", company: "Balance", title: "UX UI Designer" },
-  { year: "2017", company: "L3 Home", title: "Marketing & Digital Designer" },
-  { year: "2015", company: "3ciety", title: "Senior Designer" },
-  { year: "2013", company: "DIA Brands", title: "Senior Graphic Designer" },
-  { year: "2011", company: "Lucideas / Fundamental", title: "Art Director" },
-  { year: "2010", company: "OgilvyAction Malaysia", title: "Designer / Visualizer" },
+  { year: "2025", company: "Digitas", title: "UX UI Designer", logo: "/images/explogos/digitas.png" },
+  { year: "2021", company: "Balance", title: "UX UI Designer", logo: "/images/explogos/balance.png" },
+  { year: "2017", company: "L3 Home", title: "Marketing & Digital Designer", logo: "/images/explogos/l3home.png" },
+  { year: "2015", company: "3ciety", title: "Senior Designer", logo: "/images/explogos/3ciety.png" },
+  { year: "2013", company: "DIA Brands", title: "Senior Graphic Designer", logo: "/images/explogos/dia.png" },
+  { year: "2011", company: "Lucideas / Fundamental", title: "Art Director", logo: "/images/explogos/fundamental.png" },
+  { year: "2010", company: "OgilvyAction Malaysia", title: "Designer / Visualizer", logo: "/images/explogos/ogilvy.png" },
 ];
 
 const projects = [
@@ -36,31 +36,31 @@ const projects = [
     title: "Mitre 10",
     description: "Retail and campaign design for a national hardware chain",
     href: "/work/mitre10",
-    image: { src: "/images/mitre10/hero.jpg", alt: "Mitre 10" },
+    image: { src: "/images/mitre10/hero.png", alt: "Mitre 10" },
   },
   {
     title: "Taubmans",
     description: "UX case study",
     href: "/work/taubmans",
-    image: { src: "/images/taubmans/hero.jpg", alt: "Taubmans" },
+    image: { src: "/images/taubmans/hero.png", alt: "Taubmans" },
   },
   {
     title: "MMEM",
     description: "Brand identity and collateral",
     href: "/work/mmem",
-    image: { src: "/images/mmem/hero.jpg", alt: "MMEM" },
+    image: { src: "/images/mmem/hero.png", alt: "MMEM" },
   },
   {
     title: "Aspect Skincare",
     description: "Brand identity and packaging for a skincare label",
     href: "/work/aspect-skincare",
-    image: { src: "/images/aspect-skincare/hero.jpg", alt: "Aspect Skincare" },
+    image: { src: "/images/aspect-skincare/hero.png", alt: "Aspect Skincare" },
   },
   {
     title: "Mirvac",
     description: "Redesigning for Build-to-Rent",
     href: "/work/mirvac",
-    image: { src: "/images/mirvac/1.jpg", alt: "Mirvac" },
+    image: { src: "/images/mirvac/hero.png", alt: "Mirvac" },
   },
   {
     title: "L3 Home — UX/UI",
@@ -96,7 +96,8 @@ const projects = [
     title: "Archives",
     description: "Fundamental, IDEAS, and F&N Ang Pau — selected older work",
     href: "/work/archives",
-    image: { src: "/images/archives/hero.jpg", alt: "Archives" },
+    image: { src: "/images/archives/hero.png", alt: "Archives" },
+    wide: true,
   },
 ];
 

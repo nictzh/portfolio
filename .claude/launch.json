@@ -7,6 +7,12 @@
       "runtimeArgs": ["http-server", "C:\\Users\\Nick\\Documents\\Claude\\nicktoh-portfolio", "-p", "5173"],
       "port": 5173,
       "autoPort": false
+    },
+    {
+      "name": "portfolio-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
     }
   ]
 }

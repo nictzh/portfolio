@@ -1,36 +1,33 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 type ProjectCardProps = {
   title: string;
   description: string;
   href?: string;
+  image: { src: string; alt: string };
   comingSoon?: boolean;
-  image?: { src: string; alt: string };
+  wide?: boolean;
 };
 
 export default function ProjectCard({
   title,
   description,
   href,
-  comingSoon,
   image,
+  comingSoon,
+  wide,
 }: ProjectCardProps) {
+  const className = `card${comingSoon ? " comingSoon" : ""}${wide ? " cardWide" : ""}`;
   const content = (
     <>
       <div className="cardThumb">
-        {image ? (
-          <Image
-            src={image.src}
-            alt={image.alt}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            style={{ objectFit: "cover" }}
-          />
-        ) : (
+        {comingSoon ? (
           <div className="cardPlaceholder">
             <span>Coming soon</span>
           </div>
+        ) : (
+          <Image src={image.src} alt={image.alt} fill sizes="50vw" style={{ objectFit: "cover" }} />
         )}
       </div>
       <div className="cardBody">
@@ -44,11 +41,11 @@ export default function ProjectCard({
   );
 
   if (comingSoon || !href) {
-    return <div className="card comingSoon">{content}</div>;
+    return <div className={className}>{content}</div>;
   }
 
   return (
-    <Link href={href} className="card">
+    <Link href={href} className={className}>
       {content}
     </Link>
   );

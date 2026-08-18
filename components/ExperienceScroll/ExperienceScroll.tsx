@@ -6,6 +6,7 @@ export type ExperienceEntry = {
   year: string;
   company: string;
   title: string;
+  logo: string;
 };
 
 export default function ExperienceScroll({ items }: { items: ExperienceEntry[] }) {
@@ -69,7 +70,7 @@ export default function ExperienceScroll({ items }: { items: ExperienceEntry[] }
           <span className="expYear">{item.year}</span>
           <div className="expRow">
             <div className="expLogo">
-              <span className="logoPlaceholder">Logo</span>
+              <img src={item.logo} alt={`${item.company} logo`} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
             </div>
             <div className="expText">
               <span className="expRole">{item.company}</span>

@@ -18,7 +18,7 @@ export default function Taubmans() {
         { label: "Tools", value: "Figma, Askable, Teams" },
         { label: "UX UI Design Director", value: "Michael Smith" },
       ]}
-      heroImage={{ src: "/images/taubmans/hero.jpg", alt: "Taubmans" }}
+      heroImage={{ src: "/images/taubmans/hero.png", alt: "Taubmans" }}
       prevLink={{ href: "/work/mitre10", label: "← Mitre 10" }}
       nextLink={{ href: "/work/mmem", label: "MMEM →" }}
     >
@@ -67,10 +67,10 @@ export default function Taubmans() {
             store manager to understand in-store behaviours, workflows and their ordering process.
           </p>
           <div className="caseImgRow quad">
-            <CaseImage src="/images/taubmans/discover-1.jpg" alt="Taubmans discovery" />
-            <CaseImage src="/images/taubmans/discover-2.jpg" alt="Taubmans discovery" />
-            <CaseImage src="/images/taubmans/discover-3.jpg" alt="Taubmans discovery" />
-            <CaseImage src="/images/taubmans/discover-4.jpg" alt="Taubmans discovery" />
+            <CaseImage src="/images/taubmans/discover-1.png" alt="Taubmans discovery" />
+            <CaseImage src="/images/taubmans/discover-2.png" alt="Taubmans discovery" />
+            <CaseImage src="/images/taubmans/discover-3.png" alt="Taubmans discovery" />
+            <CaseImage src="/images/taubmans/discover-4.png" alt="Taubmans discovery" />
           </div>
           <h3>Competitive Benchmarking</h3>
           <p>
@@ -81,10 +81,10 @@ export default function Taubmans() {
             pages.
           </p>
           <div className="caseImgRow quad">
-            <CaseImage src="/images/taubmans/discover-5.jpg" alt="Competitive benchmarking" />
-            <CaseImage src="/images/taubmans/discover-6.jpg" alt="Competitive benchmarking" />
-            <CaseImage src="/images/taubmans/discover-7.jpg" alt="Competitive benchmarking" />
-            <CaseImage src="/images/taubmans/discover-8.jpg" alt="Competitive benchmarking" />
+            <CaseImage src="/images/taubmans/discover-5.png" alt="Competitive benchmarking" />
+            <CaseImage src="/images/taubmans/discover-6.png" alt="Competitive benchmarking" />
+            <CaseImage src="/images/taubmans/discover-7.png" alt="Competitive benchmarking" />
+            <CaseImage src="/images/taubmans/discover-8.png" alt="Competitive benchmarking" />
           </div>
         </div>
       </Reveal>
@@ -108,7 +108,7 @@ export default function Taubmans() {
           </div>
           <p>With these insights, we were then able to build upon the proto persona initially provided from the data.</p>
           <div className="caseImgRow single">
-            <CaseImage src="/images/taubmans/define-1.jpg" alt="Persona" />
+            <CaseImage src="/images/taubmans/define-1.png" alt="Persona" />
           </div>
         </div>
       </Reveal>
@@ -129,11 +129,11 @@ export default function Taubmans() {
             QR code to save colour codes.
           </p>
           <div className="caseImgRow single">
-            <CaseImage src="/images/taubmans/develop-3.jpg" alt="Wireframe" />
+            <CaseImage src="/images/taubmans/develop-3.png" alt="Wireframe" />
           </div>
           <div className="caseImgRow">
-            <CaseImage src="/images/taubmans/develop-4.jpg" alt="Wireframe" />
-            <CaseImage src="/images/taubmans/develop-4b.jpg" alt="Wireframe" />
+            <CaseImage src="/images/taubmans/develop-4.png" alt="Wireframe" />
+            <CaseImage src="/images/taubmans/develop-4b.png" alt="Wireframe" />
           </div>
           <h3>User Testing</h3>
           <p>
@@ -141,7 +141,7 @@ export default function Taubmans() {
             overall, with some further insights revealed along the way.
           </p>
           <div className="caseImgRow single">
-            <CaseImage src="/images/taubmans/develop-5.jpg" alt="User testing" />
+            <CaseImage src="/images/taubmans/develop-5.png" alt="User testing" />
           </div>
         </div>
       </Reveal>
@@ -155,12 +155,16 @@ export default function Taubmans() {
             some slight adjustments to the wireframe before building out the high fidelity design. This was
             supported by the Taubman&apos;s existing brand guidelines.
           </p>
-          <div className="caseBento6 five">
-            <div><CaseImage src="/images/taubmans/deliver-1.jpg" alt="Hi-fi design" /></div>
-            <div><CaseImage src="/images/taubmans/deliver-2.jpg" alt="Hi-fi design" /></div>
-            <div><CaseImage src="/images/taubmans/deliver-3.jpg" alt="Hi-fi design" /></div>
-            <div><CaseImage src="/images/taubmans/deliver-4.jpg" alt="Hi-fi design" /></div>
-            <div><CaseImage src="/images/taubmans/deliver-5.jpg" alt="Hi-fi design" /></div>
+          <div className="caseDeliverBento">
+            <div className="caseDeliverRow caseDeliverRow--top">
+              <div><CaseImage src="/images/taubmans/deliver-1.png" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/taubmans/deliver-2.png" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/taubmans/deliver-3.png" alt="Hi-fi design" /></div>
+            </div>
+            <div className="caseDeliverRow caseDeliverRow--bottom">
+              <div><CaseImage src="/images/taubmans/deliver-4.png" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/taubmans/deliver-5.png" alt="Hi-fi design" /></div>
+            </div>
           </div>
           <h3>Handover</h3>
           <div style={{ maxWidth: 720, display: "flex", flexDirection: "column", gap: 24 }}>
@@ -172,11 +176,11 @@ export default function Taubmans() {
               <br />
             </p>
             <div className="caseImgRow">
-              <CaseImage src="/images/taubmans/develop-5b.jpg" alt="Handover" />
-              <CaseImage src="/images/taubmans/develop-5c.jpg" alt="Handover" />
+              <CaseImage src="/images/taubmans/handover-1.png" alt="Handover" />
+              <CaseImage src="/images/taubmans/handover-2.png" alt="Handover" />
             </div>
             <div className="caseImgRow single">
-              <CaseImage src="/images/taubmans/develop-5.jpg" alt="Handover" />
+              <CaseImage src="/images/taubmans/handover-3.png" alt="Handover" />
             </div>
           </div>
         </div>

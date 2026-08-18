@@ -39,12 +39,12 @@ export default function Mirvac() {
             easily enquire them as a key conversion.
           </p>
           <div className="caseBento6">
-            <div><img src="/images/mirvac/1.jpg" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-            <div><img src="/images/mirvac/2.jpg" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-            <div><img src="/images/mirvac/3.jpg" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-            <div><img src="/images/mirvac/4.jpg" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-            <div><img src="/images/mirvac/5.jpg" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-            <div><img src="/images/mirvac/6.jpg" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+            <div><img src="/images/mirvac/mirvac-1.png" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+            <div><img src="/images/mirvac/mirvac-2.png" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+            <div><img src="/images/mirvac/mirvac-3.png" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+            <div><img src="/images/mirvac/mirvac-4.png" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+            <div><img src="/images/mirvac/mirvac-5.png" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+            <div><img src="/images/mirvac/mirvac-6.png" alt="Mirvac" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
           </div>
         </div>
       </section>
