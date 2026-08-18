@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import CaseStudyLayout from "@/components/CaseStudyLayout/CaseStudyLayout";
-import Reveal from "@/components/Reveal/RevealSection";
+import Reveal from "@/components/Reveal/Reveal";
 
 export const metadata: Metadata = {
   title: "Mirvac — Nick Toh",
