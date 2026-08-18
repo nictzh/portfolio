@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
 const links = [
   { label: "Work", href: "/" },
   { label: "About", href: "/about" },
@@ -33,7 +32,7 @@ export default function Nav() {
     <header className={`nav${scrolled ? " scrolled" : ""}`}>
       <div className="inner">
         <Link href="/" className="brand" onClick={() => setOpen(false)}>
-          <span className="monogram">NT</span>
+          <img className="monogram" src="/images/nt-logo.svg" alt="NT" style={{ width: 89, height: 54 }} />
           <span className="name">Nick Toh</span>
         </Link>
 

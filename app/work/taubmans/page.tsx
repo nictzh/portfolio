@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CaseImage from "@/components/CaseImage/CaseImage";
 import CaseStudyLayout from "@/components/CaseStudyLayout/CaseStudyLayout";
+import Reveal from "@/components/Reveal/RevealSection";
 
 export const metadata: Metadata = {
   title: "Taubmans — Nick Toh",
@@ -21,7 +22,7 @@ export default function Taubmans() {
       prevLink={{ href: "/work/mitre10", label: "← Mitre 10" }}
       nextLink={{ href: "/work/mmem", label: "MMEM →" }}
     >
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Overview</span>
         <div className="caseBody">
           <h3>Client Background</h3>
@@ -46,9 +47,9 @@ export default function Taubmans() {
             maintaining the pricing and franchise relationships the business depended on.
           </p>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Discover</span>
         <div className="caseBody">
           <h3>Experience Audit</h3>
@@ -86,9 +87,9 @@ export default function Taubmans() {
             <CaseImage src="/images/taubmans/discover-8.jpg" alt="Competitive benchmarking" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Define</span>
         <div className="caseBody">
           <h3>Insights</h3>
@@ -110,9 +111,9 @@ export default function Taubmans() {
             <CaseImage src="/images/taubmans/define-1.jpg" alt="Persona" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Develop</span>
         <div className="caseBody">
           <p className="caseQuote">Placeholder How Might We statement.</p>
@@ -143,9 +144,9 @@ export default function Taubmans() {
             <CaseImage src="/images/taubmans/develop-5.jpg" alt="User testing" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Deliver</span>
         <div className="caseBody" style={{ maxWidth: "100%" }}>
           <h3>Hi-Fidelity Design</h3>
@@ -179,9 +180,9 @@ export default function Taubmans() {
             </div>
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Moving Forward</span>
         <div className="caseBody">
           <h3>Conclusion</h3>
@@ -198,7 +199,7 @@ export default function Taubmans() {
             <li><div>3 disjointed experiences unified into 1 purpose-built platform</div></li>
           </ul>
         </div>
-      </section>
+      </Reveal>
     </CaseStudyLayout>
   );
 }

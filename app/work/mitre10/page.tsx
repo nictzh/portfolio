@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CaseImage from "@/components/CaseImage/CaseImage";
 import CaseStudyLayout from "@/components/CaseStudyLayout/CaseStudyLayout";
+import Reveal from "@/components/Reveal/RevealSection";
 
 export const metadata: Metadata = {
   title: "Mitre 10 — Nick Toh",
@@ -22,7 +23,7 @@ export default function Mitre10() {
       prevLink={{ href: "/", label: "← Back to Work" }}
       nextLink={{ href: "/work/taubmans", label: "Taubmans →" }}
     >
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Overview</span>
         <div className="caseBody">
           <p>Placeholder — a UX case study for a national hardware chain.</p>
@@ -31,9 +32,9 @@ export default function Mitre10() {
             <CaseImage src="/images/mitre10/overview-1.jpg" alt="Overview" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Discover</span>
         <div className="caseBody">
           <h3>Client Background</h3>
@@ -49,9 +50,9 @@ export default function Mitre10() {
             <CaseImage src="/images/mitre10/discover-2.jpg" alt="Research" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Define</span>
         <div className="caseBody">
           <h3>Insights</h3>
@@ -68,9 +69,9 @@ export default function Mitre10() {
             <CaseImage src="/images/mitre10/define-2.jpg" alt="Persona" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Develop</span>
         <div className="caseBody">
           <p className="caseQuote">Placeholder How Might We statement.</p>
@@ -91,9 +92,9 @@ export default function Mitre10() {
             <CaseImage src="/images/mitre10/develop-5.jpg" alt="Wireframe" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Deliver</span>
         <div className="caseBody">
           <p>Placeholder — high-fidelity design and delivery details go here.</p>
@@ -103,9 +104,9 @@ export default function Mitre10() {
             <CaseImage src="/images/mitre10/deliver-3.jpg" alt="Hi-fi design" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Usability Testing</span>
         <div className="caseBody">
           <p>Placeholder — usability testing approach and findings go here.</p>
@@ -113,9 +114,9 @@ export default function Mitre10() {
             <CaseImage src="/images/mitre10/testing-1.jpg" alt="Usability testing" />
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="caseSection reveal visible">
+      <Reveal className="caseSection reveal">
         <span className="caseLabel">Moving Forward</span>
         <div className="caseBody">
           <h3>Conclusion</h3>
@@ -126,7 +127,7 @@ export default function Mitre10() {
             <li>Placeholder next step two.</li>
           </ul>
         </div>
-      </section>
+      </Reveal>
     </CaseStudyLayout>
   );
 }

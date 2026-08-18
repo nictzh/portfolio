@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import CaseStudyLayout from "@/components/CaseStudyLayout/CaseStudyLayout";
+import Reveal from "@/components/Reveal/RevealSection";
 
 export const metadata: Metadata = {
   title: "Archives — Nick Toh",
