@@ -66,13 +66,13 @@ const projects = [
     title: "L3 Home — UX/UI",
     description: "E-commerce redesign for a Melbourne furniture brand",
     href: "/work/l3home-ux",
-    image: { src: "/images/l3home-ux/hero.png", alt: "L3 Home — UX/UI" },
+    image: { src: "/images/l3home-ux/hero.jpg", alt: "L3 Home — UX/UI" },
   },
   {
     title: "L3 Home — Branding",
     description: "Brand identity for a direct-to-consumer homewares label",
     href: "/work/l3home-branding",
-    image: { src: "/images/l3home-branding/hero.png", alt: "L3 Home — Branding" },
+    image: { src: "/images/l3home-branding/hero.jpg", alt: "L3 Home — Branding" },
   },
   {
     title: "Bumbung",
@@ -84,7 +84,7 @@ const projects = [
     title: "Eastern Warehouse",
     description: "Brand and visual language for a homewares distributor",
     href: "/work/eastern-warehouse",
-    image: { src: "/images/eastern-warehouse/hero.png", alt: "Eastern Warehouse" },
+    image: { src: "/images/eastern-warehouse/hero.jpg", alt: "Eastern Warehouse" },
   },
   {
     title: "3ciety.com",
