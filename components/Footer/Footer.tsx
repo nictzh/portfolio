@@ -122,17 +122,17 @@ export default function Footer() {
         <br />
       </h2>
       <div className="contactLinks">
-        <a href="mailto:hello@nicktoh.com" className="contactLink">
+        <a href="mailto:nictzh@gmail.com" className="contactLink">
           <span className="contactLinkText">Email</span>
-          <span className="contactLinkSub">hello@nicktoh.com</span>
+          <span className="contactLinkSub">nictzh@gmail.com</span>
         </a>
-        <a href="https://wa.me/61000000000" className="contactLink" target="_blank" rel="noopener">
+        <a href="https://wa.me/61414810353" className="contactLink" target="_blank" rel="noopener">
           <span className="contactLinkText">WhatsApp</span>
-          <span className="contactLinkSub">+61 000 000 000</span>
+          <span className="contactLinkSub">+61 414 810 353</span>
         </a>
-        <a href="https://linkedin.com/in/nicktoh" className="contactLink" target="_blank" rel="noopener">
+        <a href="https://linkedin.com/in/nick-toh-4a0911a" className="contactLink" target="_blank" rel="noopener">
           <span className="contactLinkText">LinkedIn</span>
-          <span className="contactLinkSub">/in/nicktoh</span>
+          <span className="contactLinkSub">/in/nick-toh-4a0911a</span>
         </a>
       </div>
     </footer>

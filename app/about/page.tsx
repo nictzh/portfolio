@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 };
 
 const experience = [
-  { year: "2025", role: "Digitas", org: "UX UI Designer" },
-  { year: "2021", role: "Balance Internet", org: "UX UI Designer" },
-  { year: "2017", role: "L3 Home, Melbourne", org: "Marketing & Digital Designer" },
-  { year: "2015", role: "3ciety, Kuala Lumpur", org: "Senior Designer" },
-  { year: "2013", role: "DIA Brands, KL", org: "Senior Graphic Designer" },
-  { year: "2011", role: "Lucideas / Fundamental, KL", org: "Art Director" },
-  { year: "2010", role: "OgilvyAction Malaysia", org: "Designer / Visualizer" },
+  { year: "2025", role: "Digitas", org: "UX UI Designer", logo: "/images/explogos/digitas.png" },
+  { year: "2021", role: "Balance Internet", org: "UX UI Designer", logo: "/images/explogos/balance.png" },
+  { year: "2017", role: "L3 Home, Melbourne", org: "Marketing & Digital Designer", logo: "/images/explogos/l3home.png" },
+  { year: "2015", role: "3ciety, Kuala Lumpur", org: "Senior Designer", logo: "/images/explogos/3ciety.png" },
+  { year: "2013", role: "DIA Brands, KL", org: "Senior Graphic Designer", logo: "/images/explogos/dia.png" },
+  { year: "2011", role: "Lucideas / Fundamental, KL", org: "Art Director", logo: "/images/explogos/fundamental.png" },
+  { year: "2010", role: "OgilvyAction Malaysia", org: "Designer / Visualizer", logo: "/images/explogos/ogilvy.png" },
 ];
 
 const education = [
@@ -64,7 +64,7 @@ export default function About() {
                 <span className="entryDate">{entry.year}</span>
                 <div className="expRow">
                   <div className="expLogo">
-                    <span className="logoPlaceholder">Logo</span>
+                    <img src={entry.logo} alt={`${entry.role} logo`} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
                   </div>
                   <div className="expText">
                     <span className="expRole">{entry.role}</span>

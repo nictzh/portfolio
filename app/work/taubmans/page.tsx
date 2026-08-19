@@ -15,6 +15,7 @@ export default function Taubmans() {
       title="Taubmans"
       meta={[
         { label: "Role", value: "UX Researcher, UX/UI Designer" },
+        { label: "Areas Covered", value: "UX UI Design, UX Workshop, User Testing, Wireframing" },
         { label: "Tools", value: "Figma, Askable, Teams" },
         { label: "UX UI Design Director", value: "Michael Smith" },
       ]}
@@ -155,13 +156,13 @@ export default function Taubmans() {
             some slight adjustments to the wireframe before building out the high fidelity design. This was
             supported by the Taubman&apos;s existing brand guidelines.
           </p>
-          <div className="caseDeliverBento">
-            <div className="caseDeliverRow caseDeliverRow--top">
+          <div className="taubmansDeliverBento">
+            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--top">
               <div><CaseImage src="/images/taubmans/deliver-1.png" alt="Hi-fi design" /></div>
               <div><CaseImage src="/images/taubmans/deliver-2.png" alt="Hi-fi design" /></div>
               <div><CaseImage src="/images/taubmans/deliver-3.png" alt="Hi-fi design" /></div>
             </div>
-            <div className="caseDeliverRow caseDeliverRow--bottom">
+            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--bottom">
               <div><CaseImage src="/images/taubmans/deliver-4.png" alt="Hi-fi design" /></div>
               <div><CaseImage src="/images/taubmans/deliver-5.png" alt="Hi-fi design" /></div>
             </div>

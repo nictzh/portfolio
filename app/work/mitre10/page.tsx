@@ -15,39 +15,46 @@ export default function Mitre10() {
       title="Mitre 10"
       meta={[
         { label: "Role", value: "UX Researcher, UX/UI Designer" },
-        { label: "Timeframe", value: "Placeholder" },
-        { label: "Tools", value: "Figma, Miro" },
-        { label: "Mentors", value: "Placeholder" },
+        { label: "Areas Covered", value: "Competitive Benchmarking, Wireframe Prototyping, Hi-Fidelity Design" },
+        { label: "Tools", value: "Adobe XD, Figma, Miro" },
+        { label: "UX UI Design Director", value: "Michael Smith" },
       ]}
-      heroImage={{ src: "/images/mitre10/hero.jpg", alt: "Mitre 10" }}
+      heroImage={{ src: "/images/mitre10/hero.png", alt: "Mitre 10" }}
       prevLink={{ href: "/", label: "← Back to Work" }}
       nextLink={{ href: "/work/taubmans", label: "Taubmans →" }}
     >
       <Reveal className="caseSection reveal">
-        <span className="caseLabel">Overview</span>
-        <div className="caseBody">
-          <p>Placeholder — a UX case study for a national hardware chain.</p>
-          <p>We adopted the Double Diamond process throughout the journey of this exercise.</p>
-          <div className="caseImgRow single">
-            <CaseImage src="/images/mitre10/overview-1.jpg" alt="Overview" />
-          </div>
-        </div>
-      </Reveal>
-
-      <Reveal className="caseSection reveal">
         <span className="caseLabel">Discover</span>
         <div className="caseBody">
           <h3>Client Background</h3>
-          <p>Placeholder — client background and context go here.</p>
+          <p>
+            Mitre 10 is one of Australia&apos;s largest home improvement and hardware retailers. It operates a
+            network of independently owned and operated stores across the country, known for combining local,
+            community-based service with the buying power of a national brand.
+          </p>
           <h3>Challenge and Objective</h3>
-          <p>Placeholder — the challenge and objective behind the project go here.</p>
+          <p>
+            The business wanted to move away from its long-standing reliance on printed catalogues, and put that
+            value into its digital assets instead.
+            <br />
+            <br />
+            The brief had asked us to re-evaluate the Mitre 10 online experience, along with the site&apos;s
+            information architecture to improve its structure and content hierarchy while keeping the experience
+            customer-first.
+          </p>
           <h3>Problem Statement</h3>
-          <p className="caseQuote">Placeholder problem statement.</p>
-          <h3>Research and Analysis</h3>
-          <p>Placeholder — research and analysis findings go here.</p>
+          <p className="caseQuote">
+            Mitre 10&apos;s online experience wasn&apos;t flexible enough to serve customers and commercial partners
+            at the same time.
+          </p>
+          <h3>Competitive Benchmarking</h3>
+          <p>Placeholder — competitive benchmarking findings go here.</p>
+          <div className="caseImgFull">
+            <CaseImage src="/images/mitre10/discover-3.jpg" alt="Competitive benchmarking" />
+          </div>
           <div className="caseImgRow">
-            <CaseImage src="/images/mitre10/discover-1.jpg" alt="Research" />
-            <CaseImage src="/images/mitre10/discover-2.jpg" alt="Research" />
+            <CaseImage src="/images/mitre10/discover-1.jpg" alt="Competitive benchmarking" />
+            <CaseImage src="/images/mitre10/discover-2.jpg" alt="Competitive benchmarking" />
           </div>
         </div>
       </Reveal>
@@ -56,17 +63,24 @@ export default function Mitre10() {
         <span className="caseLabel">Define</span>
         <div className="caseBody">
           <h3>Insights</h3>
-          <p>Placeholder — key insights synthesised from research go here.</p>
+          <p>Benchmarking translated into a small set of guiding insights that shaped the design direction.</p>
           <div className="caseInsights">
-            <div className="caseInsight">Placeholder insight one.</div>
-            <div className="caseInsight">Placeholder insight two.</div>
-            <div className="caseInsight">Placeholder insight three.</div>
-            <div className="caseInsight">Placeholder insight four.</div>
-          </div>
-          <p>Placeholder — persona and journey mapping go here.</p>
-          <div className="caseImgRow">
-            <CaseImage src="/images/mitre10/define-1.jpg" alt="Persona" />
-            <CaseImage src="/images/mitre10/define-2.jpg" alt="Persona" />
+            <div className="caseInsight">
+              The homepage needed a tiered content structure — not just one hero slot — to give partners meaningful,
+              valuable marketing placements.
+            </div>
+            <div className="caseInsight">
+              Product searchability needs to be at the forefront of the user experience. Organic content like
+              articles also needs to be surfaced better.
+            </div>
+            <div className="caseInsight">
+              The site&apos;s visual system needed more contrast and bold to reflect its new brand direction so
+              content could stand out rather than blend into the brand blue.
+            </div>
+            <div className="caseInsight">
+              Navigation and utility elements (login, wishlist, cart, search) needed a clearer, more deliberate
+              structure.
+            </div>
           </div>
         </div>
       </Reveal>
@@ -74,44 +88,59 @@ export default function Mitre10() {
       <Reveal className="caseSection reveal">
         <span className="caseLabel">Develop</span>
         <div className="caseBody">
-          <p className="caseQuote">Placeholder How Might We statement.</p>
-          <h3>Ideation</h3>
-          <p>Placeholder — ideation process goes here.</p>
-          <div className="caseImgRow triple">
-            <CaseImage src="/images/mitre10/develop-1.jpg" alt="Ideation" />
-            <CaseImage src="/images/mitre10/develop-2.jpg" alt="Ideation" />
-            <CaseImage src="/images/mitre10/develop-3.jpg" alt="Ideation" />
-          </div>
-          <h3>User Flow</h3>
-          <p>Placeholder — user flow description goes here.</p>
-          <div className="caseImgRow single">
-            <CaseImage src="/images/mitre10/develop-4.jpg" alt="User flow" />
-          </div>
-          <h3>Lo-fi Wireframe</h3>
+          <h3>Lo-fidelity Wireframe</h3>
+          <p>
+            With insights defined, we moved directly into low-fidelity wireframing rather than a separate ideation
+            phase — appropriate for a lean process with a tightly scoped brief. Wireframes explored a modular
+            homepage structure as a base for other pages in the core journey.
+          </p>
           <div className="caseImgRow single">
             <CaseImage src="/images/mitre10/develop-5.jpg" alt="Wireframe" />
           </div>
+          <h3>Stakeholder Testing</h3>
+          <p>
+            Validation for this project was carried out through rounds of stakeholder review — checking design
+            decisions against the benchmarking goals set out in Discover, and iterating the high-fidelity design
+            based on that feedback.
+          </p>
         </div>
       </Reveal>
 
       <Reveal className="caseSection reveal">
         <span className="caseLabel">Deliver</span>
-        <div className="caseBody">
-          <p>Placeholder — high-fidelity design and delivery details go here.</p>
-          <div className="caseImgRow triple">
-            <CaseImage src="/images/mitre10/deliver-1.jpg" alt="Hi-fi design" />
-            <CaseImage src="/images/mitre10/deliver-2.jpg" alt="Hi-fi design" />
-            <CaseImage src="/images/mitre10/deliver-3.jpg" alt="Hi-fi design" />
+        <div className="caseBody" style={{ maxWidth: "100%" }}>
+          <h3>Hi-Fidelity Design</h3>
+          <p>
+            In the high fidelity design, we refined the visual system to integrate the new brand guidelines as well
+            as addressing the contrast and brand-colour issues raised in benchmarking.
+          </p>
+          <div className="taubmansDeliverBento">
+            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--top">
+              <div><CaseImage src="/images/mitre10/deliver-1.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mitre10/deliver-2.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mitre10/deliver-3.jpg" alt="Hi-fi design" /></div>
+            </div>
+            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--bottom">
+              <div><CaseImage src="/images/mitre10/deliver-4.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mitre10/deliver-5.jpg" alt="Hi-fi design" /></div>
+            </div>
           </div>
-        </div>
-      </Reveal>
-
-      <Reveal className="caseSection reveal">
-        <span className="caseLabel">Usability Testing</span>
-        <div className="caseBody">
-          <p>Placeholder — usability testing approach and findings go here.</p>
-          <div className="caseImgRow single">
-            <CaseImage src="/images/mitre10/testing-1.jpg" alt="Usability testing" />
+          <h3>Style Guide Handover</h3>
+          <div style={{ maxWidth: 720, display: "flex", flexDirection: "column", gap: 24 }}>
+            <p>
+              As the primary handover deliverable, we produced a style guide documenting the updated elements,
+              giving the internal team a consistent reference for building and maintaining the new homepage
+              template going forward. We also included a comprehensive guide for managing modular content
+              components, providing a visual hierarchy guide to ensure the experience remains cohesive and
+              balanced.
+            </p>
+            <div className="caseImgRow">
+              <CaseImage src="/images/mitre10/handover-1.jpg" alt="Handover" />
+              <CaseImage src="/images/mitre10/handover-2.jpg" alt="Handover" />
+            </div>
+            <div className="caseImgRow single">
+              <CaseImage src="/images/mitre10/handover-3.jpg" alt="Handover" />
+            </div>
           </div>
         </div>
       </Reveal>
@@ -120,12 +149,27 @@ export default function Mitre10() {
         <span className="caseLabel">Moving Forward</span>
         <div className="caseBody">
           <h3>Conclusion</h3>
-          <p>Placeholder — conclusion goes here.</p>
-          <h3>Next Steps</h3>
+          <p>
+            The redesigned homepage template gave Mitre 10 a more flexible, tiered content structure to support
+            partners, alongside a clearer, higher-contrast visual system and more prominent service information for
+            customers. The modular content system was then extended to complete the rest of the key templates (e.g.
+            category and product pages), as well as adapting it to their sister brand, Home Hardware.
+          </p>
+          <h3>Success Metrics</h3>
+          <p>
+            This homepage redesign was part of Mitre 10&apos;s wider digital transformation — including a full
+            platform migration to Adobe Commerce, nationwide fulfilment rollout, and consolidated brand experiences.
+            Mitre 10 has since seen strong platform-wide performance gains, including.
+          </p>
           <ul className="caseList">
-            <li>Placeholder next step one.</li>
-            <li>Placeholder next step two.</li>
+            <li><strong>315%</strong> increase in transactions</li>
+            <li><strong>234%</strong> increase in revenue</li>
+            <li><strong>6%</strong> increase in eCommerce conversion rate</li>
           </ul>
+          <p>
+            Mitre 10 continues to work with Balance/Digitas to this day, with an ongoing partnership focused on
+            evolving their digital experience and identifying new areas for improvement.
+          </p>
         </div>
       </Reveal>
     </CaseStudyLayout>

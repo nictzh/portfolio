@@ -34,13 +34,13 @@ const experience: ExperienceEntry[] = [
 const projects = [
   {
     title: "Mitre 10",
-    description: "Retail and campaign design for a national hardware chain",
+    description: "Lean UX redesign for The Other Hardware Store",
     href: "/work/mitre10",
     image: { src: "/images/mitre10/hero.png", alt: "Mitre 10" },
   },
   {
     title: "Taubmans",
-    description: "UX case study",
+    description: "UX case study for an Australian household brand",
     href: "/work/taubmans",
     image: { src: "/images/taubmans/hero.png", alt: "Taubmans" },
   },
@@ -58,7 +58,7 @@ const projects = [
   },
   {
     title: "Mirvac",
-    description: "Redesigning for Build-to-Rent",
+    description: "Designing for a digital Build-to-Rent experience",
     href: "/work/mirvac",
     image: { src: "/images/mirvac/hero.png", alt: "Mirvac" },
   },
@@ -66,13 +66,13 @@ const projects = [
     title: "L3 Home — UX/UI",
     description: "E-commerce redesign for a Melbourne furniture brand",
     href: "/work/l3home-ux",
-    image: { src: "/images/l3home-ux/hero.jpg", alt: "L3 Home — UX/UI" },
+    image: { src: "/images/l3home-ux/hero.png", alt: "L3 Home — UX/UI" },
   },
   {
     title: "L3 Home — Branding",
     description: "Brand identity for a direct-to-consumer homewares label",
     href: "/work/l3home-branding",
-    image: { src: "/images/l3home-branding/hero.jpg", alt: "L3 Home — Branding" },
+    image: { src: "/images/l3home-branding/hero.png", alt: "L3 Home — Branding" },
   },
   {
     title: "Bumbung",
@@ -84,7 +84,7 @@ const projects = [
     title: "Eastern Warehouse",
     description: "Brand and visual language for a homewares distributor",
     href: "/work/eastern-warehouse",
-    image: { src: "/images/eastern-warehouse/hero.jpg", alt: "Eastern Warehouse" },
+    image: { src: "/images/eastern-warehouse/hero.png", alt: "Eastern Warehouse" },
   },
   {
     title: "3ciety.com",
@@ -94,7 +94,7 @@ const projects = [
   },
   {
     title: "Archives",
-    description: "Fundamental, IDEAS, and F&N Ang Pau — selected older work",
+    description: "Selected older work from my past career",
     href: "/work/archives",
     image: { src: "/images/archives/hero.png", alt: "Archives" },
     wide: true,

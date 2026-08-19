@@ -19,7 +19,7 @@ export default function AspectSkincare() {
         { label: "Tools", value: "Figma, Miro" },
         { label: "Mentors", value: "Placeholder" },
       ]}
-      heroImage={{ src: "/images/aspect-skincare/hero.jpg", alt: "Aspect Skincare" }}
+      heroImage={{ src: "/images/aspect-skincare/hero.png", alt: "Aspect Skincare" }}
       prevLink={{ href: "/work/mmem", label: "← MMEM" }}
       nextLink={{ href: "/work/mirvac", label: "Mirvac →" }}
     >
@@ -98,10 +98,27 @@ export default function AspectSkincare() {
         <span className="caseLabel">Deliver</span>
         <div className="caseBody">
           <p>Placeholder — high-fidelity design and delivery details go here.</p>
-          <div className="caseImgRow triple">
-            <CaseImage src="/images/aspect-skincare/deliver-1.jpg" alt="Hi-fi design" />
-            <CaseImage src="/images/aspect-skincare/deliver-2.jpg" alt="Hi-fi design" />
-            <CaseImage src="/images/aspect-skincare/deliver-3.jpg" alt="Hi-fi design" />
+          <div className="taubmansDeliverBento">
+            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--top">
+              <div><CaseImage src="/images/aspect-skincare/deliver-1.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/aspect-skincare/deliver-2.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/aspect-skincare/deliver-3.jpg" alt="Hi-fi design" /></div>
+            </div>
+            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--bottom">
+              <div><CaseImage src="/images/aspect-skincare/deliver-4.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/aspect-skincare/deliver-5.jpg" alt="Hi-fi design" /></div>
+            </div>
+          </div>
+          <h3>Handover</h3>
+          <div style={{ maxWidth: 720, display: "flex", flexDirection: "column", gap: 24 }}>
+            <p>Placeholder — handover details (service blueprint, style guide, etc.) go here.</p>
+            <div className="caseImgRow">
+              <CaseImage src="/images/aspect-skincare/handover-1.jpg" alt="Handover" />
+              <CaseImage src="/images/aspect-skincare/handover-2.jpg" alt="Handover" />
+            </div>
+            <div className="caseImgRow single">
+              <CaseImage src="/images/aspect-skincare/handover-3.jpg" alt="Handover" />
+            </div>
           </div>
         </div>
       </Reveal>

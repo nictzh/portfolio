@@ -19,7 +19,7 @@ export default function MMEM() {
         { label: "Tools", value: "Figma, Miro" },
         { label: "Mentors", value: "Placeholder" },
       ]}
-      heroImage={{ src: "/images/mmem/hero.jpg", alt: "MMEM" }}
+      heroImage={{ src: "/images/mmem/hero.png", alt: "MMEM" }}
       prevLink={{ href: "/work/taubmans", label: "← Taubmans" }}
       nextLink={{ href: "/work/aspect-skincare", label: "Aspect Skincare →" }}
     >
@@ -98,10 +98,27 @@ export default function MMEM() {
         <span className="caseLabel">Deliver</span>
         <div className="caseBody">
           <p>Placeholder — high-fidelity design and delivery details go here.</p>
-          <div className="caseImgRow triple">
-            <CaseImage src="/images/mmem/deliver-1.jpg" alt="Hi-fi design" />
-            <CaseImage src="/images/mmem/deliver-2.jpg" alt="Hi-fi design" />
-            <CaseImage src="/images/mmem/deliver-3.jpg" alt="Hi-fi design" />
+          <div className="taubmansDeliverBento">
+            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--top">
+              <div><CaseImage src="/images/mmem/deliver-1.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mmem/deliver-2.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mmem/deliver-3.jpg" alt="Hi-fi design" /></div>
+            </div>
+            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--bottom">
+              <div><CaseImage src="/images/mmem/deliver-4.jpg" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mmem/deliver-5.jpg" alt="Hi-fi design" /></div>
+            </div>
+          </div>
+          <h3>Handover</h3>
+          <div style={{ maxWidth: 720, display: "flex", flexDirection: "column", gap: 24 }}>
+            <p>Placeholder — handover details (service blueprint, style guide, etc.) go here.</p>
+            <div className="caseImgRow">
+              <CaseImage src="/images/mmem/handover-1.jpg" alt="Handover" />
+              <CaseImage src="/images/mmem/handover-2.jpg" alt="Handover" />
+            </div>
+            <div className="caseImgRow single">
+              <CaseImage src="/images/mmem/handover-3.jpg" alt="Handover" />
+            </div>
           </div>
         </div>
       </Reveal>
