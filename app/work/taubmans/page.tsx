@@ -156,13 +156,13 @@ export default function Taubmans() {
             some slight adjustments to the wireframe before building out the high fidelity design. This was
             supported by the Taubman&apos;s existing brand guidelines.
           </p>
-          <div className="taubmansDeliverBento">
-            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--top">
+          <div className="caseDeliverBento">
+            <div className="caseDeliverRow caseDeliverRow--top">
               <div><CaseImage src="/images/taubmans/deliver-1.png" alt="Hi-fi design" /></div>
               <div><CaseImage src="/images/taubmans/deliver-2.png" alt="Hi-fi design" /></div>
               <div><CaseImage src="/images/taubmans/deliver-3.png" alt="Hi-fi design" /></div>
             </div>
-            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--bottom">
+            <div className="caseDeliverRow caseDeliverRow--bottom">
               <div><CaseImage src="/images/taubmans/deliver-4.png" alt="Hi-fi design" /></div>
               <div><CaseImage src="/images/taubmans/deliver-5.png" alt="Hi-fi design" /></div>
             </div>

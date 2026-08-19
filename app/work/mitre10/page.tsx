@@ -47,14 +47,35 @@ export default function Mitre10() {
             Mitre 10&apos;s online experience wasn&apos;t flexible enough to serve customers and commercial partners
             at the same time.
           </p>
+          <h3>User Experience Audit</h3>
+          <p>
+            We ran a UX audit of the existing user journey to ground the project in first-hand evidence rather than
+            assumptions, walking through the existing site against core usability heuristics — clarity of hierarchy,
+            navigation logic, visual contrast, and content findability — to validate and discover potentially new
+            pain points raised in the brief.
+            <br />
+            <br />
+            A feature list was also worked out by the solution architect team, mapped out based on each journey to
+            ensure the scope and requirements are met. It gave the team a concrete, evidence-based starting point to
+            test findings against in the benchmarking stage that followed.
+          </p>
+          <div className="caseImgRow single">
+            <CaseImage src="/images/mitre10/discover-4.png" alt="Research approach" />
+          </div>
           <h3>Competitive Benchmarking</h3>
-          <p>Placeholder — competitive benchmarking findings go here.</p>
+          <p>
+            As a lean UX engagement, our research was grounded in the client brief and a structured benchmarking
+            exercise against competitor and category-leading hardware/retail sites. While home page was primarily
+            the focus on this exercise, we also did benchmarking on key touchpoints of the core user journey.
+            Evidently, Bunnings was often mentioned as the clear main competitor, but we also included close
+            competitors such as Sydney Tools to avoid a bias assumption of best practice in the market.
+          </p>
           <div className="caseImgFull">
-            <CaseImage src="/images/mitre10/discover-3.jpg" alt="Competitive benchmarking" />
+            <CaseImage src="/images/mitre10/discover-3.png" alt="Competitive benchmarking" />
           </div>
           <div className="caseImgRow">
-            <CaseImage src="/images/mitre10/discover-1.jpg" alt="Competitive benchmarking" />
-            <CaseImage src="/images/mitre10/discover-2.jpg" alt="Competitive benchmarking" />
+            <CaseImage src="/images/mitre10/discover-1.png" alt="Competitive benchmarking" />
+            <CaseImage src="/images/mitre10/discover-2.png" alt="Competitive benchmarking" />
           </div>
         </div>
       </Reveal>
@@ -95,7 +116,7 @@ export default function Mitre10() {
             homepage structure as a base for other pages in the core journey.
           </p>
           <div className="caseImgRow single">
-            <CaseImage src="/images/mitre10/develop-5.jpg" alt="Wireframe" />
+            <CaseImage src="/images/mitre10/develop-5.png" alt="Wireframe" />
           </div>
           <h3>Stakeholder Testing</h3>
           <p>
@@ -114,15 +135,15 @@ export default function Mitre10() {
             In the high fidelity design, we refined the visual system to integrate the new brand guidelines as well
             as addressing the contrast and brand-colour issues raised in benchmarking.
           </p>
-          <div className="taubmansDeliverBento">
-            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--top">
-              <div><CaseImage src="/images/mitre10/deliver-1.jpg" alt="Hi-fi design" /></div>
-              <div><CaseImage src="/images/mitre10/deliver-2.jpg" alt="Hi-fi design" /></div>
-              <div><CaseImage src="/images/mitre10/deliver-3.jpg" alt="Hi-fi design" /></div>
+          <div className="caseDeliverBento">
+            <div className="caseDeliverRow caseDeliverRow--top">
+              <div><CaseImage src="/images/mitre10/deliver-1.png" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mitre10/deliver-2.png" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mitre10/deliver-3.png" alt="Hi-fi design" /></div>
             </div>
-            <div className="taubmansDeliverBento__row taubmansDeliverBento__row--bottom">
-              <div><CaseImage src="/images/mitre10/deliver-4.jpg" alt="Hi-fi design" /></div>
-              <div><CaseImage src="/images/mitre10/deliver-5.jpg" alt="Hi-fi design" /></div>
+            <div className="caseDeliverRow caseDeliverRow--bottom">
+              <div><CaseImage src="/images/mitre10/deliver-4.png" alt="Hi-fi design" /></div>
+              <div><CaseImage src="/images/mitre10/deliver-5.png" alt="Hi-fi design" /></div>
             </div>
           </div>
           <h3>Style Guide Handover</h3>
@@ -134,12 +155,11 @@ export default function Mitre10() {
               components, providing a visual hierarchy guide to ensure the experience remains cohesive and
               balanced.
             </p>
-            <div className="caseImgRow">
-              <CaseImage src="/images/mitre10/handover-1.jpg" alt="Handover" />
-              <CaseImage src="/images/mitre10/handover-2.jpg" alt="Handover" />
+            <div className="caseImgRow single">
+              <CaseImage src="/images/mitre10/handover-1.png" alt="Handover" />
             </div>
             <div className="caseImgRow single">
-              <CaseImage src="/images/mitre10/handover-3.jpg" alt="Handover" />
+              <CaseImage src="/images/mitre10/handover-2.png" alt="Handover" />
             </div>
           </div>
         </div>
