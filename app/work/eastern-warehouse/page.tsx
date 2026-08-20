@@ -9,12 +9,14 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  "https://static.wixstatic.com/media/53b24d_404675a68b1f4d1fb2d378efac9caf24~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_ea39c9dd06d94ab9b684c7b2a0c0a401~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_82be53550c604a69a38dee82ae74a106~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_58e6c0c451ef48c783557e28731c6d00~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_f5b5d19a82c947de9aeb69b0009fff1b~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_c52aa737f0564faa837abe352d7391df~mv2.jpg",
+  "/images/eastern-warehouse/01.jpg",
+  "/images/eastern-warehouse/02.jpg",
+  "/images/eastern-warehouse/03.jpg",
+  "/images/eastern-warehouse/04.jpg",
+  "/images/eastern-warehouse/05.jpg",
+  "/images/eastern-warehouse/06.jpg",
+  "/images/eastern-warehouse/07.jpg",
+  "/images/eastern-warehouse/08.jpg",
 ];
 
 export default function EasternWarehouse() {

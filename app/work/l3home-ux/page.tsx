@@ -20,14 +20,14 @@ export default function L3HomeUx() {
         { label: "Mentors", value: "Lily Kane & Ryan Martin, Zendesk (Academy Xi)" },
       ]}
       heroImage={{
-        src: "https://static.wixstatic.com/media/53b24d_68edf6026fef49eb86a4e6b2006dd07a~mv2.png",
+        src: "/images/l3home-ux/hero.jpg",
         alt: "L3 Home — Revisited",
       }}
       prevLink={{ href: "/", label: "← Back to Work" }}
       nextLink={{ href: "#", label: "Next Project »" }}
     >
       <section className="caseSection">
-        <span className="caseLabel">Overview</span>
+        <span className="caseLabel">Discover</span>
         <div className="caseBody">
           <p>
             To improve L3 Home&apos;s customer experience on the website while
@@ -36,17 +36,8 @@ export default function L3HomeUx() {
           </p>
           <p>We adopted the Double Diamond process throughout the journey of this exercise.</p>
           <div className="caseImgRow single">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_7d27ff71de7a463a9d59ee62fe2a0834~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/discover-1.png" alt="Design Thinking / Double Diamond process" />
           </div>
-        </div>
-      </section>
-
-      <section className="caseSection">
-        <span className="caseLabel">Discover</span>
-        <div className="caseBody">
           <h3>Client Background</h3>
           <p>
             L3 Home is a family-owned furniture wholesale/retail brand
@@ -96,14 +87,8 @@ export default function L3HomeUx() {
             brand identity later.
           </p>
           <div className="caseImgRow">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_c8e62bbb95774a769e5a96e5a0160053~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_164dcd77f00b48baa29fdefb4a943606~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/discover-2.png" alt="Competitor Analysis" />
+            <CaseImage src="/images/l3home-ux/discover-3.png" alt="Brand Matrix" />
           </div>
           <p>
             We conducted 1-on-1 interviews and online surveys to understand
@@ -113,19 +98,9 @@ export default function L3HomeUx() {
             age group, and market trends research helped back up the
             stakeholder&apos;s position in the market.
           </p>
-          <div className="caseImgRow triple">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_3ff311a9fd8f4fb091dc3ca68c965b21~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_8dca48ab0ea74da6b108a3d1d7a3d3b4~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_57c573dbeab947b8b4647c0d60b82b79~mv2.png"
-              alt=""
-            />
+          <div className="caseImgRow">
+            <CaseImage src="/images/l3home-ux/discover-4.png" alt="Google Analytics" />
+            <CaseImage src="/images/l3home-ux/discover-5.png" alt="Market Research" />
           </div>
         </div>
       </section>
@@ -141,14 +116,8 @@ export default function L3HomeUx() {
             questions raised during research to group them into categories.
           </p>
           <div className="caseImgRow">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_0549590bcf6b4e3abf72d65ccc498c67~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_cdce30d0c2014f5689a5d52137023f5e~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/define-1.png" alt="Affinity Map" />
+            <CaseImage src="/images/l3home-ux/define-2.png" alt="Empathy Map" />
           </div>
           <h4>Four key insights</h4>
           <div className="caseInsights">
@@ -175,14 +144,8 @@ export default function L3HomeUx() {
             challenges from the Consideration to Service stage.
           </p>
           <div className="caseImgRow">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_38fa02eb894b4895891ad70d6052a4ad~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_7af91c2f12494269971c9547b1273a33~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/define-3.png" alt="Persona" />
+            <CaseImage src="/images/l3home-ux/define-4.png" alt="Customer Journey" />
           </div>
         </div>
       </section>
@@ -202,18 +165,9 @@ export default function L3HomeUx() {
             Minimum Viable Product matrix to prioritise them.
           </p>
           <div className="caseImgRow triple">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_a0e4777b1a3847988063654a306edecb~mv2.jpg"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_4079686111d5481dbfff0b3d6faae970~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_dc766cb9566643fe99d7ecc9e059de8d~mv2.jpg"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/develop-1.jpg" alt="Crazy 8s" />
+            <CaseImage src="/images/l3home-ux/develop-2.jpg" alt="MVP Matrix" />
+            <CaseImage src="/images/l3home-ux/develop-3.png" alt="Storyboard" />
           </div>
           <h3>User Flow</h3>
           <p>
@@ -224,17 +178,11 @@ export default function L3HomeUx() {
             assistance.
           </p>
           <div className="caseImgRow single">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_fe61a5fb4abf462996b58901e063a8da~mv2.jpg"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/develop-4.jpg" alt="User Flow" />
           </div>
           <h3>Lo-fi Wireframe</h3>
           <div className="caseImgRow single">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_e8b0a87472dd429eab564fd83d2d018b~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/develop-5.png" alt="Lo-fi Wireframe" />
           </div>
           <h3>Brand Identity</h3>
           <p>
@@ -245,14 +193,8 @@ export default function L3HomeUx() {
             existing Josefin Sans.
           </p>
           <div className="caseImgRow">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_4c7bffa70d9a4ac0a4b5c1990ba1d872~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_b07b3747b4d9475d863259eafdac84fa~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/develop-6.png" alt="Moodboard" />
+            <CaseImage src="/images/l3home-ux/develop-7.png" alt="Colour Palette" />
           </div>
         </div>
       </section>
@@ -266,10 +208,7 @@ export default function L3HomeUx() {
             wireframe.
           </p>
           <div className="caseImgRow single">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_22373e424ab143f48fc87c3043defbf9~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/deliver-1.png" alt="Hi-fi Wireframe" />
           </div>
           <p>
             I focused on the Product page as the main touchpoint where users
@@ -277,19 +216,11 @@ export default function L3HomeUx() {
             users a chance to get to know the product and brand better,
             letting them book appointments virtually or on-site.
           </p>
-          <div className="caseImgRow triple">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_2fc3673208ae41b7a5992662eae88c4f~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_67d8e87ed3514c8fb12a7745e3ce87e9~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_b496f938007e47f7a38c42a7c60e5488~mv2.png"
-              alt=""
-            />
+          <div className="caseImgRow quad">
+            <CaseImage src="/images/l3home-ux/deliver-2.png" alt="Home Page" />
+            <CaseImage src="/images/l3home-ux/deliver-3.png" alt="Product Listing" />
+            <CaseImage src="/images/l3home-ux/deliver-4.png" alt="Studio Page" />
+            <CaseImage src="/images/l3home-ux/deliver-5.jpg" alt="Mobile" />
           </div>
           <a
             href="https://www.figma.com/proto/hB5LNRKirCIwERkkPKJqRC/L3-Home-Low-Fid-Wireframe"
@@ -312,20 +243,11 @@ export default function L3HomeUx() {
             process natural.
           </p>
           <div className="caseImgRow">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_4b4d2fa9cf134c4b86c9b68875b92b77~mv2.png"
-              alt=""
-            />
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_f3bc57ce4d994782b95231b078815cdb~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/usability-1.png" alt="Scenario 1" />
+            <CaseImage src="/images/l3home-ux/usability-2.png" alt="Scenario 2" />
           </div>
           <div className="caseImgRow single">
-            <CaseImage
-              src="https://static.wixstatic.com/media/53b24d_db001db35711458984dfbf185873f916~mv2.png"
-              alt=""
-            />
+            <CaseImage src="/images/l3home-ux/usability-3.png" alt="Usability Report" />
           </div>
         </div>
       </section>

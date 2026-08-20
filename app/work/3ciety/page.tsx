@@ -9,12 +9,13 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  "https://static.wixstatic.com/media/53b24d_9ea031556ea64b488316fa89661879a2~mv2.png",
-  "https://static.wixstatic.com/media/53b24d_57b49b15e2294d808b123b077d995f28~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_0c915668c8514099975bf58a04e7508a~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_abe8f95cace745b0b91b9c7e3fc7aa46~mv2.png",
-  "https://static.wixstatic.com/media/53b24d_2adf2bb9416b42a28895afa2aa12fcab~mv2.png",
-  "https://static.wixstatic.com/media/53b24d_87cd1af541104237aadf045d36cd80f6~mv2.png",
+  "/images/3ciety/01.png",
+  "/images/3ciety/02.png",
+  "/images/3ciety/03.png",
+  "/images/3ciety/04.png",
+  "/images/3ciety/05.png",
+  "/images/3ciety/06.jpg",
+  "/images/3ciety/07.jpg",
 ];
 
 export default function Ciety() {

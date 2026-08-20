@@ -9,12 +9,22 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  "https://static.wixstatic.com/media/53b24d_a1fa7fe3f8cf4a1aa0d7b09f49e82a37~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_a915369936f34c5b938d98452fd17632~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_7e615fac60d8478093eeb5c691bc1b8c~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_aff78ece4ce4470c8b6772431e78216b~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_51fd3d590b1f4b47ab2af6b1e740c4f9~mv2.jpg",
-  "https://static.wixstatic.com/media/53b24d_e2f605e7b7464a0fab97ec3e67fc358c~mv2.jpg",
+  "/images/l3home-branding/01.jpg",
+  "/images/l3home-branding/02.jpg",
+  "/images/l3home-branding/03.jpg",
+  "/images/l3home-branding/04.jpg",
+  "/images/l3home-branding/05.jpg",
+  "/images/l3home-branding/06.jpg",
+  "/images/l3home-branding/07.jpg",
+  "/images/l3home-branding/08.jpg",
+  "/images/l3home-branding/09.jpg",
+  "/images/l3home-branding/10.jpg",
+  "/images/l3home-branding/11.jpg",
+  "/images/l3home-branding/12.jpg",
+  "/images/l3home-branding/13.jpg",
+  "/images/l3home-branding/14.jpg",
+  "/images/l3home-branding/15.jpg",
+  "/images/l3home-branding/16.jpg",
 ];
 
 export default function L3HomeBranding() {

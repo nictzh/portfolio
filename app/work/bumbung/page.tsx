@@ -44,7 +44,7 @@ export default function Bumbung() {
           <div className="caseBento">
             <div className="bTall">
               <Image
-                src="https://static.wixstatic.com/media/53b24d_e5f5028f8e05415296735916cf199681~mv2.jpg"
+                src="/images/bumbung/01.png"
                 alt="Bumbung"
                 fill
                 sizes="33vw"
@@ -53,7 +53,7 @@ export default function Bumbung() {
             </div>
             <div className="bWide">
               <Image
-                src="https://static.wixstatic.com/media/53b24d_7a44c2e3cb484af499f6ff43f8afaf17~mv2.png"
+                src="/images/bumbung/02.png"
                 alt="Bumbung"
                 fill
                 sizes="66vw"
@@ -62,7 +62,7 @@ export default function Bumbung() {
             </div>
             <div>
               <Image
-                src="https://static.wixstatic.com/media/53b24d_abd6b65868624db188426af68de68ef1~mv2.png"
+                src="/images/bumbung/03.png"
                 alt="Bumbung"
                 fill
                 sizes="33vw"
@@ -71,7 +71,16 @@ export default function Bumbung() {
             </div>
             <div>
               <Image
-                src="https://static.wixstatic.com/media/53b24d_3f4bcc392ec640c9ab21dd1cb830ef75~mv2.jpg"
+                src="/images/bumbung/04.jpg"
+                alt="Bumbung"
+                fill
+                sizes="33vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/bumbung/05.jpg"
                 alt="Bumbung"
                 fill
                 sizes="33vw"
