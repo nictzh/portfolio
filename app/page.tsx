@@ -8,7 +8,7 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard";
 const skills = [
   "UX/UI Design",
   "Design Systems",
-  "Vibe Coding",
+  "AI Vibe Coding",
   "eCommerce",
   "User Research",
   "User Testing",
@@ -107,8 +107,8 @@ export default function Home() {
   return (
     <main className="main">
       <Hero
-        headline="UX + UI + Product Designer"
-        sub="Hello, this is Nick Toh's portfolio, an UX designer for brands that want to mean something. 10+ years across branding, digital, and UX/UI. Melbourne-based, helping startups and growing businesses build brands and products with clarity and character."
+        headline={"Hello, I'm Nick,\na UX/UI Designer"}
+        sub="This is my portfolio for the past 15+ years across branding, digital, and UX/UI. I am Melbourne-based, and I help startups, brands and agencies grow businesses and create designs through a purpose driven philosophy."
       />
 
       <Reveal className="expSection">

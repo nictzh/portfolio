@@ -111,11 +111,14 @@ export default function Hero({ headline, sub }: HeroProps) {
           style={{
             fontSize: "clamp(2.5rem, 7vw, 96px)",
             display: "flex",
+            flexDirection: "column",
             width: "100%",
             color: "var(--color-accent)",
           }}
         >
-          {headline}
+          {headline.split("\n").map((line, i) => (
+            <span key={i}>{line}</span>
+          ))}
         </h1>
         <p className="heroSub" style={{ minWidth: "min(885px, 100%)" }}>
           {sub}
