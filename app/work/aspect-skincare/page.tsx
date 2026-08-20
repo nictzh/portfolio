@@ -21,7 +21,7 @@ export default function AspectSkincare() {
       ]}
       heroImage={{ src: "/images/aspect-skincare/hero.png", alt: "Aspect Skincare" }}
       prevLink={{ href: "/work/mmem", label: "← MMEM" }}
-      nextLink={{ href: "/work/mirvac", label: "Mirvac →" }}
+      nextLink={{ href: "/work/mirvac", label: "Mirvac »" }}
     >
       <Reveal className="caseSection reveal">
         <span className="caseLabel">Overview</span>

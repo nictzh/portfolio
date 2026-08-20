@@ -49,12 +49,14 @@ const projects = [
     description: "Brand identity and collateral",
     href: "/work/mmem",
     image: { src: "/images/mmem/hero.png", alt: "MMEM" },
+    locked: true,
   },
   {
     title: "Aspect Skincare",
     description: "Brand identity and packaging for a skincare label",
     href: "/work/aspect-skincare",
     image: { src: "/images/aspect-skincare/hero.png", alt: "Aspect Skincare" },
+    locked: true,
   },
   {
     title: "Mirvac",

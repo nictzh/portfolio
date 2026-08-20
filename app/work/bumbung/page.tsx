@@ -14,7 +14,7 @@ export default function Bumbung() {
       kicker="Brand Identity & UI/UX"
       title="Bumbung Brand Identity"
       prevLink={{ href: "/work/eastern-warehouse", label: "← Eastern Warehouse" }}
-      nextLink={{ href: "/work/3ciety", label: "3ciety →" }}
+      nextLink={{ href: "/work/3ciety", label: "3ciety »" }}
     >
       <section className="caseSection" style={{ gridTemplateColumns: "1fr" }}>
         <div className="caseBody" style={{ maxWidth: "100%" }}>

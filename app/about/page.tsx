@@ -23,41 +23,66 @@ const education = [
   { date: "2004", role: "Brighton Secondary College", org: "VCE Year 11–12" },
 ];
 
-const platforms = 8;
+const tools = [
+  { name: "Tool 01", src: "/images/tools/tool-01.png" },
+  { name: "Tool 02", src: "/images/tools/tool-02.png" },
+  { name: "Tool 03", src: "/images/tools/tool-03.png" },
+  { name: "Tool 04", src: "/images/tools/tool-04.png" },
+  { name: "Tool 05", src: "/images/tools/tool-05.png" },
+  { name: "Tool 06", src: "/images/tools/tool-06.png" },
+  { name: "Tool 07", src: "/images/tools/tool-07.png" },
+  { name: "Tool 08", src: "/images/tools/tool-08.png" },
+  { name: "Tool 09", src: "/images/tools/tool-09.png" },
+];
 const brands = [
-  "L3 Home",
-  "Eastern Warehouse",
-  "Bumbung",
-  "Temple & Webster",
-  "OgilvyAction",
-  "Petronas",
-  "F&N",
-  "Client",
-  "Client",
-  "Client",
-  "Client",
-  "Client",
+  { name: "Brand 01", src: "/images/brands/brand-01.png" },
+  { name: "Brand 02", src: "/images/brands/brand-02.png" },
+  { name: "Brand 03", src: "/images/brands/brand-03.png" },
+  { name: "Brand 04", src: "/images/brands/brand-04.png" },
+  { name: "Brand 05", src: "/images/brands/brand-05.png" },
+  { name: "Brand 06", src: "/images/brands/brand-06.png" },
+  { name: "Brand 07", src: "/images/brands/brand-07.png" },
+  { name: "Brand 08", src: "/images/brands/brand-08.png" },
+  { name: "Brand 09", src: "/images/brands/brand-09.png" },
+  { name: "Brand 10", src: "/images/brands/brand-10.png" },
+  { name: "Brand 11", src: "/images/brands/brand-11.png" },
+  { name: "Brand 12", src: "/images/brands/brand-12.png" },
+  { name: "Brand 13", src: "/images/brands/brand-13.png" },
+  { name: "Brand 14", src: "/images/brands/brand-14.png" },
+  { name: "Brand 15", src: "/images/brands/brand-15.png" },
+  { name: "Brand 16", src: "/images/brands/brand-16.png" },
 ];
 
 export default function About() {
   return (
     <main className="main">
-      <section className="intro">
-        <h1 className="opener" style={{ color: "var(--color-accent)" }}>
-          I blur the line between brand and product design.
-        </h1>
-        <p className="bio">
-          Melbourne-based designer with 10+ years across branding, digital, and UX/UI. Started in
-          Malaysia, moved to Australia, built for startups and SMBs ever since.
-        </p>
-        <a href="#" className="cvButton">
-          Download CV
-        </a>
-      </section>
+      <Reveal className="intro">
+        <div className="introText">
+          <h1 className="opener" style={{ color: "var(--color-accent)" }}>
+            I&apos;m a designer who cares about experiences that help people.
+          </h1>
+          <p className="bio">
+            Melbourne-based designer with 15+ years across branding, digital, and UX/UI. Started in
+            Malaysia, moved to Australia, built for startups, tech and agencies.
+          </p>
+          <a
+            href="/pdfs/nick-toh-resume.pdf"
+            className="cvButton"
+            download="Nick Toh - Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download Resume
+          </a>
+        </div>
+        <div className="introPortrait">
+          <img src="/images/portrait.jpg" alt="Nick Toh" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
+      </Reveal>
 
       <Reveal className="section historyGrid">
         <div>
-          <span className="sectionLabel">Work History</span>
+          <span className="sectionLabel">Experience</span>
           <div className="expList">
             {experience.map((entry) => (
               <div className="entry" key={entry.role}>
@@ -76,11 +101,11 @@ export default function About() {
           </div>
         </div>
         <div>
-          <span className="sectionLabel">Platforms I work with</span>
+          <span className="sectionLabel">Tools I work with</span>
           <div className="softwareGrid">
-            {Array.from({ length: platforms }).map((_, i) => (
-              <div className="softwareTile" key={i}>
-                <span className="logoPlaceholder">App</span>
+            {tools.map((tool) => (
+              <div className="softwareTile" key={tool.name}>
+                <img src={tool.src} alt={tool.name} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
               </div>
             ))}
           </div>
@@ -90,9 +115,9 @@ export default function About() {
       <Reveal className="section">
         <span className="sectionLabel">Brands I have worked with</span>
         <div className="brandGrid">
-          {brands.map((brand, i) => (
-            <div className="brandTile" key={`${brand}-${i}`}>
-              <span className="logoPlaceholder">{brand}</span>
+          {brands.map((brand) => (
+            <div className="brandTile" key={brand.name}>
+              <img src={brand.src} alt={brand.name} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
             </div>
           ))}
         </div>

@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -8,7 +12,10 @@ type ProjectCardProps = {
   image: { src: string; alt: string };
   comingSoon?: boolean;
   wide?: boolean;
+  locked?: boolean;
 };
+
+const LOCK_PASSWORD = "8784";
 
 export default function ProjectCard({
   title,
@@ -17,8 +24,32 @@ export default function ProjectCard({
   image,
   comingSoon,
   wide,
+  locked,
 }: ProjectCardProps) {
-  const className = `card${comingSoon ? " comingSoon" : ""}${wide ? " cardWide" : ""}`;
+  const router = useRouter();
+  const [unlocked, setUnlocked] = useState(false);
+  const [value, setValue] = useState("");
+  const [error, setError] = useState(false);
+
+  const isLocked = Boolean(locked) && !unlocked;
+  const className = `card${comingSoon ? " comingSoon" : ""}${wide ? " cardWide" : ""}${isLocked ? " locked" : ""}`;
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const next = e.target.value;
+    setValue(next);
+    setError(false);
+
+    if (next.length === LOCK_PASSWORD.length) {
+      if (next === LOCK_PASSWORD) {
+        setUnlocked(true);
+        if (href) router.push(href);
+      } else {
+        setError(true);
+        setValue("");
+      }
+    }
+  }
+
   const content = (
     <>
       <div className="cardThumb">
@@ -35,12 +66,28 @@ export default function ProjectCard({
           <span className="cardTitle">{title}</span>
           <span className="cardDesc">{description}</span>
         </div>
-        <span className={`arrow${comingSoon ? " muted" : ""}`}>→</span>
+        <span className={`arrow${comingSoon ? " muted" : ""}`}>»</span>
       </div>
+      {isLocked && (
+        <div className="cardLockOverlay">
+          <span className="cardLockIcon">🔒</span>
+          <span className="cardLockLabel">Password required</span>
+          <input
+            type="password"
+            inputMode="numeric"
+            maxLength={4}
+            placeholder="Password"
+            value={value}
+            onChange={handleChange}
+            className="cardLockInput"
+          />
+          {error && <span className="cardLockError">Incorrect password</span>}
+        </div>
+      )}
     </>
   );
 
-  if (comingSoon || !href) {
+  if (comingSoon || !href || isLocked) {
     return <div className={className}>{content}</div>;
   }
 

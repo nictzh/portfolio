@@ -21,7 +21,7 @@ export default function Mitre10() {
       ]}
       heroImage={{ src: "/images/mitre10/hero.png", alt: "Mitre 10" }}
       prevLink={{ href: "/", label: "← Back to Work" }}
-      nextLink={{ href: "/work/taubmans", label: "Taubmans →" }}
+      nextLink={{ href: "/work/taubmans", label: "Taubmans »" }}
     >
       <Reveal className="caseSection reveal">
         <span className="caseLabel">Discover</span>

@@ -23,11 +23,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Nick Toh — Communication Designer",
+  title: "Nick Toh — UX/UI Product Designer",
   description:
     "10+ years across branding, digital, and UX/UI. Melbourne-based.",
   openGraph: {
-    title: "Nick Toh — Communication Designer",
+    title: "Nick Toh — UX/UI Product Designer",
     description:
       "10+ years across branding, digital, and UX/UI. Melbourne-based.",
   },

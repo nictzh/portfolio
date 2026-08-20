@@ -23,7 +23,7 @@ export default function EasternWarehouse() {
       kicker="Branding & Operations"
       title="Eastern Warehouse"
       prevLink={{ href: "/work/l3home-branding", label: "← L3 Home — Branding" }}
-      nextLink={{ href: "/work/bumbung", label: "Bumbung →" }}
+      nextLink={{ href: "/work/bumbung", label: "Bumbung »" }}
     >
       <section className="caseSection" style={{ gridTemplateColumns: "1fr" }}>
         <div className="caseBody" style={{ maxWidth: "100%" }}>

@@ -5,7 +5,22 @@ import { useEffect, useRef, useState } from "react";
 export default function Footer() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
+  const footerRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    const el = footerRef.current;
+    if (!el) return;
+    // Expand whenever the footer is actually on screen, however the user
+    // got there (clicking Contact or scrolling down manually), and revert
+    // once it scrolls back out of view.
+    const io = new IntersectionObserver(([entry]) => setExpanded(entry.isIntersecting), {
+      threshold: 0.15,
+    });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   useEffect(() => {
     const el = headlineRef.current;
@@ -42,10 +57,19 @@ export default function Footer() {
       canvas!.height = r.height * devicePixelRatio;
       canvas!.style.width = r.width + "px";
       canvas!.style.height = r.height + "px";
-      ctx!.scale(devicePixelRatio, devicePixelRatio);
+      // setTransform (not scale) so repeated resizes — e.g. every frame of
+      // the expand transition below — don't compound the DPR scaling.
+      ctx!.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
     }
     resize();
     window.addEventListener("resize", resize);
+    // The grid background sizes itself via CSS (height: 100%), but the
+    // canvas's drawing surface only matches its container in pixels set
+    // here — so it also needs to re-measure whenever .contact's own
+    // height changes (e.g. the expand/collapse transition), not just on
+    // window resize.
+    const ro = new ResizeObserver(resize);
+    ro.observe(sec);
 
     let last: { x: number; y: number } | null = null;
     const onMove = (e: MouseEvent) => {
@@ -104,6 +128,7 @@ export default function Footer() {
 
     return () => {
       window.removeEventListener("resize", resize);
+      ro.disconnect();
       sec.removeEventListener("mousemove", onMove);
       sec.removeEventListener("mouseleave", onLeave);
       cancelAnimationFrame(raf);
@@ -111,7 +136,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="contact" id="contact">
+    <footer ref={footerRef} className={`contact${expanded ? " expanded" : ""}`} id="contact">
       <div className="heroGrid contactGrid" />
       <canvas className="contactPen" ref={canvasRef} />
       <span className="sectionLabel">Say Hello!</span>

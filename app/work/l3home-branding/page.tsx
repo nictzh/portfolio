@@ -23,7 +23,7 @@ export default function L3HomeBranding() {
       kicker="Brand Identity"
       title="L3 Home: Like It, Live It, Love It"
       prevLink={{ href: "/", label: "← Back to Work" }}
-      nextLink={{ href: "/work/eastern-warehouse", label: "Eastern Warehouse →" }}
+      nextLink={{ href: "/work/eastern-warehouse", label: "Eastern Warehouse »" }}
     >
       <section className="caseSection" style={{ gridTemplateColumns: "1fr" }}>
         <div className="caseBody" style={{ maxWidth: "100%" }}>

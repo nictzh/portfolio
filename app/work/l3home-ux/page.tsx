@@ -24,7 +24,7 @@ export default function L3HomeUx() {
         alt: "L3 Home — Revisited",
       }}
       prevLink={{ href: "/", label: "← Back to Work" }}
-      nextLink={{ href: "#", label: "Next Project →" }}
+      nextLink={{ href: "#", label: "Next Project »" }}
     >
       <section className="caseSection">
         <span className="caseLabel">Overview</span>

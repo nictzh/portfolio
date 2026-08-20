@@ -21,7 +21,7 @@ export default function Taubmans() {
       ]}
       heroImage={{ src: "/images/taubmans/hero.png", alt: "Taubmans" }}
       prevLink={{ href: "/work/mitre10", label: "← Mitre 10" }}
-      nextLink={{ href: "/work/mmem", label: "MMEM →" }}
+      nextLink={{ href: "/work/mmem", label: "MMEM »" }}
     >
       <Reveal className="caseSection reveal">
         <span className="caseLabel">Overview</span>

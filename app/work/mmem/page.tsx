@@ -21,7 +21,7 @@ export default function MMEM() {
       ]}
       heroImage={{ src: "/images/mmem/hero.png", alt: "MMEM" }}
       prevLink={{ href: "/work/taubmans", label: "← Taubmans" }}
-      nextLink={{ href: "/work/aspect-skincare", label: "Aspect Skincare →" }}
+      nextLink={{ href: "/work/aspect-skincare", label: "Aspect Skincare »" }}
     >
       <Reveal className="caseSection reveal">
         <span className="caseLabel">Overview</span>

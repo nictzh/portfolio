@@ -23,7 +23,7 @@ export default function Ciety() {
       kicker="Brand Guidelines"
       title="3ciety Brand Guidelines"
       prevLink={{ href: "/work/bumbung", label: "← Bumbung" }}
-      nextLink={{ href: "/work/fundamental", label: "Fundamental →" }}
+      nextLink={{ href: "/work/fundamental", label: "Fundamental »" }}
     >
       <section className="caseSection" style={{ gridTemplateColumns: "1fr" }}>
         <div className="caseBody" style={{ maxWidth: "100%" }}>

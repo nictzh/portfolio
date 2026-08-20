@@ -17,6 +17,24 @@ type CaseStudyLayoutProps = {
   children: React.ReactNode;
 };
 
+function renderNavLabel(label: string) {
+  if (label.startsWith("← ")) {
+    return (
+      <>
+        <span className="caseNavIcon">‹</span> {label.slice(2)}
+      </>
+    );
+  }
+  if (label.endsWith(" »")) {
+    return (
+      <>
+        {label.slice(0, -2)} <span className="caseNavIcon">»</span>
+      </>
+    );
+  }
+  return label;
+}
+
 export default function CaseStudyLayout({
   kicker,
   title,
@@ -79,10 +97,10 @@ export default function CaseStudyLayout({
 
       <nav className="caseNav">
         <Link href={prevLink.href} className="caseNavLink">
-          {prevLink.label}
+          {renderNavLabel(prevLink.label)}
         </Link>
         <Link href={nextLink.href} className="caseNavLink">
-          {nextLink.label}
+          {renderNavLabel(nextLink.label)}
         </Link>
       </nav>
 

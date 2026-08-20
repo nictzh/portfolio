@@ -19,7 +19,7 @@ export default function Mirvac() {
         { label: "Creative Director", value: "Meaghan Blanch" },
       ]}
       prevLink={{ href: "/work/aspect-skincare", label: "← Aspect Skincare" }}
-      nextLink={{ href: "/work/l3home-ux", label: "L3 Home — UX/UI →" }}
+      nextLink={{ href: "/work/l3home-ux", label: "L3 Home — UX/UI »" }}
     >
       <section className="caseSection" style={{ gridTemplateColumns: "1fr" }}>
         <div className="caseBody" style={{ maxWidth: "100%" }}>

@@ -62,7 +62,7 @@ export default function Archives() {
       kicker="Selected Older Work"
       title="Archives"
       prevLink={{ href: "/work/3ciety", label: "← 3ciety" }}
-      nextLink={{ href: "/", label: "Back to Work →" }}
+      nextLink={{ href: "/", label: "Back to Work »" }}
     >
       <section className="caseSection" style={{ gridTemplateColumns: "1fr", borderTop: "1px solid var(--color-border)", paddingTop: 48 }}>
         <div className="caseBody" style={{ maxWidth: "100%" }}>
